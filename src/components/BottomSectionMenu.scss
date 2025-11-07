@@ -1,0 +1,146 @@
+.bottom-menu-container {
+  width: 100%;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  padding: 12px 0;
+  z-index: 999;
+  transition: all 0.3s ease;
+
+  &.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  }
+
+  .menu-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding: 0 16px;
+
+    button {
+      background-color: #f76b1c;
+      color: #fff;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 6px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background-color: #ebd6c8;
+        color: #000;
+      }
+    }
+  }
+
+  // 📱 Mobile (up to 600px)
+  @media screen and (max-width: 600px) {
+    padding: 8px 0;
+
+    .menu-links {
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      justify-content: flex-start;
+      gap: 8px;
+      scrollbar-width: none;
+      -webkit-overflow-scrolling: touch;
+      touch-action: pan-x;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+
+      button {
+        flex: 0 0 auto;
+        padding: 8px 12px;
+        font-size: 13px;
+      }
+    }
+  }
+
+  // 📱 Tablets (601px–768px)
+  @media screen and (min-width: 601px) and (max-width: 768px) {
+    .menu-links {
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+
+      button {
+        font-size: 13.5px;
+        padding: 9px 14px;
+      }
+    }
+  }
+
+  // 💻 Small Desktops/Tablets (769px–1024px)
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    .menu-links {
+      justify-content: center;
+      gap: 12px;
+
+      button {
+        font-size: 14px;
+        padding: 10px 18px;
+      }
+    }
+  }
+
+  // 🖥️ Desktop (1025px and above)
+  @media screen and (min-width: 1025px) {
+    .menu-links {
+      justify-content: center;
+      gap: 16px;
+
+      button {
+        font-size: 15px;
+        padding: 10px 20px;
+      }
+    }
+  }
+
+  // 📺 Large Screens (1440px+)
+  @media screen and (min-width: 1440px) {
+    .menu-links {
+      gap: 20px;
+
+      button {
+        font-size: 16px;
+        padding: 12px 22px;
+      }
+    }
+  }
+
+  // 🖨️ Print: Hide menu
+  @media print {
+    display: none;
+  }
+
+  // ✨ Retina or high DPI screens
+  @media screen and (min-resolution: 2dppx) {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  }
+
+  // 🧠 Accessibility: Reduce animation if user prefers
+  @media (prefers-reduced-motion: reduce) {
+    * {
+      transition: none !important;
+      animation: none !important;
+    }
+  }
+
+  // 🧪 Optional: Container query for future-proofing (use only if you're using container queries)
+  @supports (container-type: inline-size) {
+    @container (min-width: 600px) {
+      .menu-links {
+        justify-content: center;
+      }
+    }
+  }
+}

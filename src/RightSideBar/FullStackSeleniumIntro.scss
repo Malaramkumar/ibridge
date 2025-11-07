@@ -1,0 +1,918 @@
+.mainjavafsselenium{
+   .narpavi-footer{
+      padding: -10rem;
+      position: relative;
+      width: 125%;
+      left: -15%;
+    }
+ }
+  
+.fullstack-selenium-intro {
+  font-family: "Segoe UI", sans-serif;
+  padding: 2rem 1rem;
+
+  .intro-header {
+    max-width: 1000px;
+    margin: 50px auto;
+    text-align: center;
+
+    .intro-title {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #000;
+      margin-bottom: 1.5rem;
+    }
+
+    .cta-buttons {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 1rem;
+
+      .orange-btn,
+      .outline-btn {
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+        font-weight: 600;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+
+      .orange-btn {
+        background: #f97316;
+        color: #fff;
+        border: none;
+
+        &:hover {
+          background: #ea580c;
+        }
+      }
+
+      .outline-btn {
+        background: transparent;
+        border: 2px solid #f97316;
+        color: #f97316;
+
+        &:hover {
+          background: #f97316;
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  .video-wrapper {
+    max-width: 1450px;
+    margin: auto;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+
+    .intro-video {
+      width: 100%;
+      height: auto;
+      //max-height: 700px;
+      object-fit: cover;
+      display: block;
+    }
+  }
+
+  .intro-description-block {
+    max-width: 1000px;
+    margin: 100px auto 3rem;
+    padding: 5rem;
+    text-align: center;
+    background-color: rgba(247, 234, 234, 0.3215686275);
+
+
+    .intro-subtitle {
+      font-size: 1.7rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+      color: #000;
+    }
+
+    .intro-description {
+      font-size: 1.1rem;
+      color: #162644;
+      line-height: 1.7;
+      margin-bottom: 2.5rem;
+
+      strong {
+        color: #34d399;
+      }
+    }
+
+    .intro-highlight {
+      background: #ecfdf5;
+      color: #065f46;
+      font-size: 18px;
+      padding: 1.5rem;
+      border-radius: 10px;
+      font-weight: 600;
+      line-height: 1.8;
+      max-width: 900px;
+      margin: 0 auto;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+      transition: all 0.3s ease;
+
+      strong {
+        color: #047857;
+      }
+
+      &:hover {
+        background: #d1fae5;
+        transform: scale(1.02);
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .intro-header .intro-title {
+      font-size: 2rem;
+    }
+
+    .intro-description-block {
+      .intro-subtitle {
+        font-size: 1.4rem;
+      }
+
+      .intro-description {
+        font-size: 1rem;
+      }
+
+      .intro-highlight {
+        font-size: 1rem;
+        padding: 1.2rem;
+      }
+
+      .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  }
+}
+
+
+.why-choose-fullstack-selenium {
+  padding: 4rem 1rem;
+  //background: linear-gradient(to right, #f8fafc, #f1f5f9);
+  background: white;
+  font-family: "Segoe UI", sans-serif;
+  max-width: 1400px;
+  margin: auto;
+  border-radius: 20px;
+  margin-bottom: 4rem;
+
+  .section-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 2.5rem;
+  }
+
+  .highlight-list {
+    max-width: 960px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .highlight-item {
+    background: rgba(236, 196, 246, 0.6196078431);
+    border-left: 4px solid #10b981;
+    border-radius: 10px;
+    padding: 1rem 1.2rem;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease, background 0.3s;
+
+    .icon {
+      color: #10b981;
+      margin-right: 0.8rem;
+      flex-shrink: 0;
+    }
+
+    span {
+      font-size: 18px;
+      color: #1e293b;
+      line-height: 1.6;
+    }
+
+    &:hover {
+      background: #ecfdf5;
+      transform: scale(1.03);
+    }
+  }
+}
+
+.fullstack-selenium-overview {
+  background: linear-gradient(to right, #ffffff, rgba(255, 230, 98, 0.8392156863));  
+  padding: 4rem 1rem;
+  font-family: "Segoe UI", sans-serif;
+  max-width: 1400px;
+  margin: auto;
+  border-radius: 20px;
+  margin-bottom: 4rem;
+
+  .overview-title {
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #1e293b;
+    margin-bottom: 1rem;
+  }
+
+  .overview-intro {
+    max-width: 900px;
+    margin: 0 auto 3rem;
+    text-align: center;
+    font-size: 1.1rem;
+    color: #334155;
+    line-height: 1.7;
+
+    strong {
+      color: #0f766e;
+    }
+  }
+
+  .topics-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+
+    .topic-column {
+      flex: 1;
+      min-width: 320px;
+      background: #ffffff;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: translateY(-5px);
+      }
+
+      h3 {
+        font-size: 1.3rem;
+        color: #0f172a;
+        margin-bottom: 1.2rem;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+      
+
+      ul {
+        list-style: none;
+        padding: 0;
+        
+
+        li {
+          margin-bottom: 0.8rem;
+          font-size: 18px;
+          color: #1e293b;
+          padding-left: 1.2rem;
+          position: relative;
+        }
+      }
+      .check {
+          color: #10b981;
+          margin-right: 0.75rem;
+          font-size: 1.2rem;
+          font-weight: bold;
+        }
+    }
+  }
+}
+
+
+.who-should-join {
+  background: linear-gradient(to right, rgba(219, 255, 206, 0.368627451), rgba(232, 249, 220, 0.4));  
+  padding: 4rem 1.5rem;
+  text-align: center;
+  font-family: "Segoe UI", sans-serif;
+  max-width: 1400px;
+  margin: auto;
+  border-radius: 20px;
+  margin-bottom: 4rem;
+
+  .section-title {
+    font-size: 2rem;
+    color: #1e293b;
+    margin-bottom: 1rem;
+  }
+
+  .note {
+    font-size: 1.1rem;
+    color: #334155;
+    margin-bottom: 2.5rem;
+
+    strong {
+      color: #0f766e;
+    }
+  }
+
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+
+    .card {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+      padding: 1.5rem 1.2rem;
+      width: 280px;
+      text-align: left;
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      transition: all 0.3s ease;
+
+      &:hover {
+        transform: scale(1.03);
+        box-shadow: 0 10px 28px rgba(0, 0, 0, 0.06);
+      }
+
+      .icon {
+        flex-shrink: 0;
+        margin-top: 4px;
+      }
+
+      p {
+        font-size: 18px;
+        color: #1e293b;
+        line-height: 1.5;
+      }
+    }
+  }
+}
+
+.cert-skill-grid {
+  background:linear-gradient(to right, rgba(219, 255, 206, 0.368627451), rgba(232, 249, 220, 0.4));
+  padding: 4rem 1.5rem;
+  font-family: "Segoe UI", sans-serif;
+  border-radius: 20px;
+  text-align: center;
+  //margin-bottom: 4rem;
+
+  .main-heading {
+    font-size: 2rem;
+    color: #1e3a8a;
+    margin-bottom: 3rem;
+    font-weight: 700;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .left-column,
+  .right-column {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .cert-list,
+  .dual-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .list-box {
+    background: #ffffff;
+    padding: 1rem 1.2rem;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 18px;
+    color: #1e293b;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+    cursor: default;
+
+    svg {
+      color: #0f766e;
+      min-width: 20px;
+    }
+
+    &:hover {
+      background-color: #f0fdf4;
+      transform: scale(1.02);
+    }
+  }
+
+  .highlight {
+    font-size: 1rem;
+    color: #334155;
+
+    strong {
+      color: #0f766e;
+    }
+  }
+
+  .dual-heading {
+    font-size: 1.4rem;
+    color: #1e3a8a;
+    margin-bottom: 1rem;
+    font-weight: 700;
+
+    span {
+      color: #0f766e;
+    }
+  }
+}
+
+.cta-section {
+  padding: 4rem 1.5rem;
+  background:white;
+  font-family: "Segoe UI", sans-serif;
+  text-align: center;
+
+  .cta-container {
+    max-width: 1000px;
+    margin: auto;
+    background:#fefce8;
+    padding: 2.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.05);
+  }
+
+  .cta-heading {
+    font-size: 2rem;
+    color: #0f172a;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+  }
+
+  .cta-subtext {
+    font-size: 1.1rem;
+    color: #334155;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+
+    strong {
+      color: #047857;
+    }
+  }
+
+  .cta-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+
+    .cta-btn {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: #10b981;
+      color: white;
+      padding: 0.9rem 1.4rem;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: 500;
+      transition: background 0.3s;
+      text-decoration: none;
+
+      &:hover {
+        background: #059669;
+      }
+
+      &.demo {
+        background: #3b82f6;
+
+        &:hover {
+          background: #2563eb;
+        }
+      }
+
+      svg {
+        margin-top: -2px;
+      }
+    }
+  }
+
+  .cta-footer {
+    font-size: 1.05rem;
+    color: #0f766e;
+    font-weight: 600;
+  }
+}
+
+.faq-section {
+  margin-top: 2rem;
+
+  h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+
+  .faq-item {
+    margin-bottom: 1rem;
+
+    .faq-question {
+      width: 100%;
+      padding: 0.75rem 1rem;
+      font-weight: bold;
+      background-color: #f5f5f5;
+      border: none;
+      cursor: pointer;
+      text-align: left;
+      border-radius: 4px;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: #e5e5e5;
+      }
+    }
+
+    .faq-answer {
+      padding: 0.75rem 1rem;
+      background-color: #fff;
+      border-left: 4px solid #007bff;
+      border-radius: 4px;
+      margin-top: 0.5rem;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .fullstack-selenium-intro {
+    padding: 1.5rem 0.5rem;
+    .intro-header .intro-title {
+      font-size: 2rem;
+    }
+    .intro-description-block {
+      padding: 2.5rem;
+      .intro-subtitle {
+        font-size: 1.3rem;
+      }
+      .intro-description {
+        font-size: 1rem;
+      }
+      .intro-highlight {
+        font-size: 1rem;
+        padding: 1rem;
+      }
+    }
+  }
+  .why-choose-fullstack-selenium {
+    padding: 2rem 0.5rem;
+    .section-title {
+      font-size: 1.5rem;
+    }
+    .highlight-list {
+      gap: 1rem;
+    }
+    .highlight-item span {
+      font-size: 16px;
+    }
+  }
+  .fullstack-selenium-overview {
+    padding: 2rem 0.5rem;
+    .overview-title {
+      font-size: 1.7rem;
+    }
+    .overview-intro {
+      font-size: 1rem;
+    }
+    .topics-wrapper {
+      gap: 1rem;
+      .topic-column {
+        padding: 1rem;
+        h3 {
+          font-size: 1.1rem;
+        }
+        ul li {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  .who-should-join {
+    padding: 2rem 0.5rem;
+    .section-title {
+      font-size: 1.5rem;
+    }
+    .note {
+      font-size: 1rem;
+    }
+    .cards .card p {
+      font-size: 16px;
+    }
+  }
+  .cert-skill-grid {
+    padding: 2rem 0.5rem;
+    .main-heading {
+      font-size: 1.5rem;
+    }
+    .grid-container {
+      gap: 1rem;
+    }
+    .list-box {
+      font-size: 16px;
+      padding: 0.7rem 1rem;
+    }
+    .dual-heading {
+      font-size: 1.1rem;
+    }
+  }
+  .cta-section {
+    padding: 2rem 0.5rem;
+    .cta-heading {
+      font-size: 1.5rem;
+    }
+    .cta-subtext {
+      font-size: 1rem;
+    }
+    .cta-buttons .cta-btn {
+      font-size: 0.95rem;
+      padding: 0.7rem 1rem;
+    }
+    .cta-footer {
+      font-size: 0.95rem;
+    }
+  }
+  .faq-section {
+    h2 {
+      font-size: 1.3rem;
+    }
+    .faq-item .faq-question {
+      font-size: 1rem;
+      padding: 0.6rem 0.8rem;
+    }
+    .faq-item .faq-answer {
+      font-size: 0.95rem;
+      padding: 0.6rem 0.8rem;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .fullstack-selenium-intro {
+    padding: 1rem 0.2rem;
+    .intro-header .intro-title {
+      font-size: 1.5rem;
+    }
+    .intro-description-block {
+      padding: 1.5rem;
+      .intro-subtitle {
+        font-size: 1.1rem;
+      }
+      .intro-description {
+        font-size: 0.95rem;
+      }
+      .intro-highlight {
+        font-size: 0.95rem;
+        padding: 0.7rem;
+      }
+    }
+  }
+  .why-choose-fullstack-selenium {
+    padding: 1rem 0.2rem;
+    .section-title {
+      font-size: 1.2rem;
+    }
+    .highlight-list {
+      grid-template-columns: 1fr 1fr;
+      gap: 0.7rem;
+    }
+    .highlight-item span {
+      font-size: 15px;
+    }
+  }
+  .fullstack-selenium-overview {
+    padding: 1rem 0.2rem;
+    .overview-title {
+      font-size: 1.2rem;
+    }
+    .overview-intro {
+      font-size: 0.95rem;
+    }
+    .topics-wrapper {
+      gap: 0.7rem;
+      .topic-column {
+        padding: 0.7rem;
+        h3 {
+          font-size: 1rem;
+        }
+        ul li {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+  .who-should-join {
+    padding: 1rem 0.2rem;
+    .section-title {
+      font-size: 1.2rem;
+    }
+    .note {
+      font-size: 0.95rem;
+    }
+    .cards .card p {
+      font-size: 15px;
+    }
+  }
+  .cert-skill-grid {
+    padding: 1rem 0.2rem;
+    .main-heading {
+      font-size: 1.2rem;
+    }
+    .grid-container {
+      grid-template-columns: 1fr;
+      gap: 0.7rem;
+    }
+    .list-box {
+      font-size: 15px;
+      padding: 0.5rem 0.7rem;
+    }
+    .dual-heading {
+      font-size: 1rem;
+    }
+  }
+  .cta-section {
+    padding: 1rem 0.2rem;
+    .cta-heading {
+      font-size: 1.2rem;
+    }
+    .cta-subtext {
+      font-size: 0.95rem;
+    }
+    .cta-buttons .cta-btn {
+      font-size: 0.9rem;
+      padding: 0.5rem 0.8rem;
+    }
+    .cta-footer {
+      font-size: 0.9rem;
+    }
+  }
+  .faq-section {
+    h2 {
+      font-size: 1rem;
+    }
+    .faq-item .faq-question {
+      font-size: 0.95rem;
+      padding: 0.5rem 0.7rem;
+    }
+    .faq-item .faq-answer {
+      font-size: 0.9rem;
+      padding: 0.5rem 0.7rem;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .fullstack-selenium-intro {
+    padding: 0.5rem 0.1rem;
+    .intro-header .intro-title {
+      font-size: 1.1rem;
+    }
+    .intro-description-block {
+      padding: 0.5rem;
+      .intro-subtitle {
+        font-size: 0.95rem;
+      }
+      .intro-description {
+        font-size: 0.9rem;
+      }
+      .intro-highlight {
+        font-size: 0.9rem;
+        padding: 0.5rem;
+      }
+      .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  }
+  .why-choose-fullstack-selenium {
+    padding: 0.5rem 0.1rem;
+    .section-title {
+      font-size: 1rem;
+    }
+    .highlight-list {
+      grid-template-columns: 1fr;
+      gap: 0.5rem;
+    }
+    .highlight-item span {
+      font-size: 13px;
+    }
+  }
+  .fullstack-selenium-overview {
+    padding: 0.5rem 0.1rem;
+    .overview-title {
+      font-size: 1rem;
+    }
+    .overview-intro {
+      font-size: 0.9rem;
+    }
+    .topics-wrapper {
+      flex-direction: column;
+      gap: 0.5rem;
+      .topic-column {
+        min-width: 100%;
+        padding: 0.5rem;
+        h3 {
+          font-size: 0.95rem;
+        }
+        ul li {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+  .who-should-join {
+    padding: 0.5rem 0.1rem;
+    .section-title {
+      font-size: 1rem;
+    }
+    .note {
+      font-size: 0.9rem;
+    }
+    .cards {
+      flex-direction: column;
+      gap: 0.5rem;
+      .card {
+        width: 100%;
+        padding: 1rem 0.5rem;
+        p {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+  .cert-skill-grid {
+    padding: 0.5rem 0.1rem;
+    .main-heading {
+      font-size: 1rem;
+    }
+    .grid-container {
+      grid-template-columns: 1fr;
+      gap: 0.5rem;
+    }
+    .list-box {
+      font-size: 13px;
+      padding: 0.5rem;
+    }
+    .dual-heading {
+      font-size: 0.95rem;
+    }
+  }
+  .cta-section {
+    padding: 0.5rem 0.1rem;
+    .cta-heading {
+      font-size: 1rem;
+    }
+    .cta-subtext {
+      font-size: 0.9rem;
+    }
+    .cta-buttons .cta-btn {
+      font-size: 0.85rem;
+      padding: 0.4rem 0.6rem;
+    }
+    .cta-footer {
+      font-size: 0.85rem;
+    }
+  }
+  .faq-section {
+    h2 {
+      font-size: 0.95rem;
+    }
+    .faq-item .faq-question {
+      font-size: 0.9rem;
+      padding: 0.4rem 0.5rem;
+    }
+    .faq-item .faq-answer {
+      font-size: 0.85rem;
+      padding: 0.4rem 0.5rem;
+    }
+  }
+}

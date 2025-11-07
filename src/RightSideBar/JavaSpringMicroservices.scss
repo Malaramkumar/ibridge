@@ -1,0 +1,847 @@
+.spring-microservices-section {
+  //background: linear-gradient(to right, #f9f9f9, #f0fdf4);
+  padding: 0rem 1rem;
+  font-family: "Segoe UI", sans-serif;
+
+  .spring-microservices-header {
+  text-align: center;
+  padding: 1rem 1rem;
+  //background: linear-gradient(to right, #fefce8, #f0fdf4);
+  border-bottom: 1px solid #e5e7eb;
+
+  h1 {
+    font-size: 2.4rem;
+    font-weight: 800;
+    color: #0f172a;
+    margin-bottom: 2.2rem;
+  }
+
+  .cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding-bottom: 2rem;
+
+    .orange-btn,
+    .outline-btn {
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      font-weight: 600;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .orange-btn {
+      background-color: #f97316;
+      color: white;
+      border: none;
+
+      &:hover {
+        background-color: #ea580c;
+      }
+    }
+
+    .outline-btn {
+      border: 2px solid #f97316;
+      background: transparent;
+      color: #f97316;
+
+      &:hover {
+        background: #f97316;
+        color: white;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 1.8rem;
+    }
+
+    .cta-buttons {
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+  }
+}
+
+
+  .heading-with-video {
+  position: relative;
+  width: 100vw;
+  height: 100vh; // Full screen height
+  overflow: hidden;
+
+  .background-video {
+    width: 100%;
+    height: auto;
+    max-width: 1300px;
+    margin: auto;
+    object-fit: cover; // Ensure video covers container without distortion
+    display: block;
+  }
+
+
+  @media (max-width: 768px) {
+    height: 320px;
+
+    .main-heading {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+  .container {
+    max-width: 1250px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    padding: 2rem;
+    background-color: rgba(247, 234, 234, 0.3215686275);
+    border-radius: 20px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+  }
+
+  .main-heading {
+    font-size: 2.2rem;
+    color: #065f46;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-weight: 700;
+  }
+
+  .sub-heading {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #0f172a;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+  }
+
+  .description {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 2rem;
+    font-size: 1.05rem;
+    color: #334155;
+    line-height: 1.7;
+
+    strong {
+      color: #047857;
+    }
+  }
+
+  .highlight-box {
+    background: #ecfdf5;
+    border-left: 6px solid #10b981;
+    padding: 1.5rem;
+    font-size: 1.05rem;
+    color: #0f172a;
+    line-height: 1.8;
+    border-radius: 8px;
+    max-width: 900px;
+    margin: 0 auto;
+    transition: all 0.3s ease;
+
+    strong {
+      color: #065f46;
+      font-weight: bold;
+    }
+
+    &:hover {
+      background: #d1fae5;
+      transform: scale(1.02);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+    }
+  }
+}
+
+
+.spring-overview-section {
+  padding: 5rem 1rem;
+
+  .overview-container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 2rem 2rem 3rem;
+    background: white;
+    border-radius: 14px;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.05);
+    transition: 0.3s ease;
+
+    &:hover {
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+    }
+
+    .overview-heading {
+      font-size: 1.8rem;
+      text-align: center;
+      color: #047857;
+      margin-bottom: 1.5rem;
+      font-weight: 700;
+    }
+
+    .overview-description {
+      font-size: 1.05rem;
+      line-height: 1.7;
+      text-align: center;
+      color: #334155;
+      margin-bottom: 2.5rem;
+      max-width: 900px;
+      margin-inline: auto;
+    }
+
+    .overview-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+
+      @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+      }
+
+      .overview-item {
+        background: rgba(236, 196, 246, 0.6196078431);
+        padding: 1rem 1.2rem;
+        border-left: 5px solid #10b981;
+        border-radius: 10px;
+        font-size: 18px;
+        color: #1e293b;
+        display: flex;
+        align-items: center;
+        transition: all 0.3s ease;
+
+        &:hover {
+          background: #ecfdf5;
+          transform: translateY(-4px);
+        }
+
+        .check {
+          color: #10b981;
+          margin-right: 0.75rem;
+          font-size: 1.2rem;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+
+.who-join-section {
+  padding: 4rem 1.5rem;
+  background: #fdfdfd;
+
+  .who-join-container {
+    max-width: 1100px;
+    margin: auto;
+    background: linear-gradient(to right, rgba(219, 255, 206, 0.368627451), rgba(232, 249, 220, 0.4));
+    padding: 3rem;
+    border-radius: 14px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05);
+    transition: 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .section-heading {
+      font-size: 1.6rem;
+      color: #1e3a8a;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .join-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+      padding-left: 0;
+
+      .join-item {
+        background: #f0f9ff;
+        padding: 1rem 1.5rem;
+        border-left: 4px solid #0284c7;
+        border-radius: 8px;
+        color: #1e293b;
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        transition: 0.3s;
+
+        &:hover {
+          background: #e0f2fe;
+          transform: translateY(-3px);
+        }
+
+        .dot {
+          color: #0284c7;
+          margin-right: 1rem;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+.cert-support {
+  padding: 4rem 1rem;
+  background: linear-gradient(to right, rgba(219, 255, 206, 0.368627451), rgba(232, 249, 220, 0.4));
+  max-width: 1160px;
+  margin: auto;
+
+  .cert-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+
+    .cert-left,
+    .cert-right {
+      flex: 1 1 500px;
+      background: #ffffff;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease;
+      h2 {
+        font-size: 1.4rem;
+        color: #1d4ed8;
+        margin-bottom: 1rem;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+          margin-bottom: 0.8rem;
+          padding-left: 1.6rem;
+          position: relative;
+          font-size: 18px;
+          color: #1e293b;
+
+          &::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #10b981;
+            font-weight: bold;
+          }
+        }
+      }
+
+      .placement-info {
+        margin-top: 1rem;
+        font-size: 0.95rem;
+        color: #334155;
+        line-height: 1.6;
+
+        strong {
+          color: #0f766e;
+        }
+      }
+
+      &:hover {
+        transform: translateY(-6px);
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .cert-container {
+      flex-direction: column;
+    }
+  }
+}
+
+
+.call-to-action {
+  max-width: 900px;
+  margin: 4rem auto;
+  padding: 2rem;
+  background: #fefce8;
+  border-radius: 16px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  border: 2px solid #d1fae5;
+  font-family: "Segoe UI", sans-serif;
+
+  h2 {
+    font-size: 1.8rem;
+    color: #065f46;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: 1rem;
+    color: #1f2937;
+    margin-bottom: 1.2rem;
+    line-height: 1.6;
+
+    strong {
+      color: #059669;
+    }
+
+    a {
+      color: #059669;
+      text-decoration: none;
+      font-weight: 600;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .contact-box {
+    margin-top: 2rem;
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 128, 0, 0.08);
+    border: 1px solid #d1fae5;
+
+    h3 {
+      font-size: 1.4rem;
+      color: #065f46;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      margin-bottom: 0.8rem;
+      font-size: 1rem;
+    }
+
+    .call-btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.7rem 1.4rem;
+      background-color: #10b981;
+      color: white;
+      font-weight: 600;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: #059669;
+      }
+    }
+  }
+
+  .tagline {
+    margin-top: 2rem;
+    font-size: 1rem;
+    color: #065f46;
+
+    span {
+      color: #047857;
+      font-weight: bold;
+    }
+  }
+}
+
+.faq-section {
+  background: #f9fafb;
+  padding: 60px 20px;
+
+  h2 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #0f172a;
+  }
+
+  .faq-container {
+    max-width: 900px;
+    margin: auto;
+  }
+
+  .faq-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.3s ease;
+
+    .faq-question {
+      font-weight: 600;
+      font-size: 18px;
+      display: flex;
+      justify-content: space-between;
+      color: #1e293b;
+    }
+
+    .faq-answer {
+      padding-top: 15px;
+      font-size: 16px;
+      color: #374151;
+      line-height: 1.6;
+    }
+
+    .toggle {
+      font-size: 22px;
+      color: #f97316;
+    }
+
+    &:hover {
+      background: #fefce8;
+      transform: scale(1.01);
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .spring-microservices-section {
+    padding: 0rem 0.5rem;
+    .spring-microservices-header h1 {
+      font-size: 2rem;
+    }
+    .container {
+      max-width: 900px;
+      padding: 1.5rem;
+    }
+    .main-heading {
+      font-size: 1.8rem;
+    }
+    .sub-heading {
+      font-size: 1.2rem;
+    }
+    .highlight-box {
+      font-size: 1rem;
+      padding: 1rem;
+    }
+  }
+  .spring-overview-section {
+    padding: 3rem 0.5rem;
+    .overview-container {
+      max-width: 900px;
+      padding: 1.5rem 1rem 2rem;
+      .overview-heading {
+        font-size: 1.4rem;
+      }
+      .overview-description {
+        font-size: 1rem;
+      }
+      .overview-list .overview-item {
+        font-size: 16px;
+        padding: 0.8rem 1rem;
+      }
+    }
+  }
+  .who-join-section {
+    padding: 2rem 0.5rem;
+    .who-join-container {
+      max-width: 900px;
+      padding: 2rem;
+      .section-heading {
+        font-size: 1.2rem;
+      }
+      .join-list .join-item {
+        font-size: 16px;
+        padding: 0.8rem 1rem;
+      }
+    }
+  }
+  .cert-support {
+    padding: 2rem 0.5rem;
+    .cert-container {
+      gap: 1rem;
+      .cert-left,
+      .cert-right {
+        padding: 1rem;
+        h2 {
+          font-size: 1.1rem;
+        }
+        ul li {
+          font-size: 16px;
+        }
+        .placement-info {
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+  .call-to-action {
+    max-width: 700px;
+    padding: 1rem;
+    h2 {
+      font-size: 1.3rem;
+    }
+    p, .tagline {
+      font-size: 0.95rem;
+    }
+    .contact-box h3 {
+      font-size: 1.1rem;
+    }
+    .contact-box p {
+      font-size: 0.95rem;
+    }
+    .contact-box .call-btn {
+      font-size: 0.95rem;
+      padding: 0.5rem 1rem;
+    }
+  }
+  .faq-section {
+    padding: 40px 10px;
+    h2 {
+      font-size: 1.3rem;
+    }
+    .faq-container {
+      max-width: 700px;
+    }
+    .faq-item {
+      padding: 15px;
+      .faq-question {
+        font-size: 16px;
+      }
+      .faq-answer {
+        font-size: 15px;
+      }
+      .toggle {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .spring-microservices-section {
+    padding: 0rem 0.2rem;
+    .spring-microservices-header h1 {
+      font-size: 1.5rem;
+    }
+    .container {
+      max-width: 700px;
+      padding: 1rem;
+    }
+    .main-heading {
+      font-size: 1.3rem;
+    }
+    .sub-heading {
+      font-size: 1rem;
+    }
+    .highlight-box {
+      font-size: 0.95rem;
+      padding: 0.7rem;
+    }
+  }
+  .spring-overview-section {
+    padding: 2rem 0.2rem;
+    .overview-container {
+      max-width: 700px;
+      padding: 1rem 0.5rem 1.5rem;
+      .overview-heading {
+        font-size: 1.1rem;
+      }
+      .overview-description {
+        font-size: 0.95rem;
+      }
+      .overview-list .overview-item {
+        font-size: 15px;
+        padding: 0.7rem 0.8rem;
+      }
+    }
+  }
+  .who-join-section {
+    padding: 1rem 0.2rem;
+    .who-join-container {
+      max-width: 700px;
+      padding: 1rem;
+      .section-heading {
+        font-size: 1rem;
+      }
+      .join-list .join-item {
+        font-size: 15px;
+        padding: 0.7rem 0.8rem;
+      }
+    }
+  }
+  .cert-support {
+    padding: 1rem 0.2rem;
+    .cert-container {
+      gap: 0.7rem;
+      .cert-left,
+      .cert-right {
+        padding: 0.7rem;
+        h2 {
+          font-size: 1rem;
+        }
+        ul li {
+          font-size: 15px;
+        }
+        .placement-info {
+          font-size: 0.85rem;
+        }
+      }
+    }
+  }
+  .call-to-action {
+    max-width: 500px;
+    padding: 0.7rem;
+    h2 {
+      font-size: 1rem;
+    }
+    p, .tagline {
+      font-size: 0.9rem;
+    }
+    .contact-box h3 {
+      font-size: 1rem;
+    }
+    .contact-box p {
+      font-size: 0.9rem;
+    }
+    .contact-box .call-btn {
+      font-size: 0.9rem;
+      padding: 0.4rem 0.8rem;
+    }
+  }
+  .faq-section {
+    padding: 20px 5px;
+    h2 {
+      font-size: 1rem;
+    }
+    .faq-container {
+      max-width: 500px;
+    }
+    .faq-item {
+      padding: 10px;
+      .faq-question {
+        font-size: 14px;
+      }
+      .faq-answer {
+        font-size: 13px;
+      }
+      .toggle {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .spring-microservices-section {
+    padding: 0rem 0.1rem;
+    .spring-microservices-header h1 {
+      font-size: 1.1rem;
+    }
+    .container {
+      max-width: 100%;
+      padding: 0.5rem;
+    }
+    .main-heading {
+      font-size: 1rem;
+    }
+    .sub-heading {
+      font-size: 0.9rem;
+    }
+    .highlight-box {
+      font-size: 0.9rem;
+      padding: 0.5rem;
+    }
+  }
+  .spring-overview-section {
+    padding: 1rem 0.1rem;
+    .overview-container {
+      max-width: 100%;
+      padding: 0.5rem 0.2rem 0.7rem;
+      .overview-heading {
+        font-size: 0.95rem;
+      }
+      .overview-description {
+        font-size: 0.9rem;
+      }
+      .overview-list {
+        grid-template-columns: 1fr;
+        gap: 0.7rem;
+        .overview-item {
+          font-size: 13px;
+          padding: 0.5rem 0.5rem;
+        }
+      }
+    }
+  }
+  .who-join-section {
+    padding: 0.5rem 0.1rem;
+    .who-join-container {
+      max-width: 100%;
+      padding: 0.5rem;
+      .section-heading {
+        font-size: 0.95rem;
+      }
+      .join-list .join-item {
+        font-size: 13px;
+        padding: 0.5rem 0.5rem;
+      }
+    }
+  }
+  .cert-support {
+    padding: 0.5rem 0.1rem;
+    .cert-container {
+      flex-direction: column;
+      gap: 0.5rem;
+      .cert-left,
+      .cert-right {
+        padding: 0.5rem;
+        h2 {
+          font-size: 0.95rem;
+        }
+        ul li {
+          font-size: 13px;
+        }
+        .placement-info {
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+  .call-to-action {
+    max-width: 100%;
+    padding: 0.5rem;
+    h2 {
+      font-size: 0.95rem;
+    }
+    p, .tagline {
+      font-size: 0.85rem;
+    }
+    .contact-box h3 {
+      font-size: 0.95rem;
+    }
+    .contact-box p {
+      font-size: 0.85rem;
+    }
+    .contact-box .call-btn {
+      font-size: 0.85rem;
+      padding: 0.3rem 0.6rem;
+    }
+  }
+  .faq-section {
+    padding: 10px 2px;
+    h2 {
+      font-size: 0.95rem;
+    }
+    .faq-container {
+      max-width: 100%;
+    }
+    .faq-item {
+      padding: 7px;
+      .faq-question {
+        font-size: 12px;
+      }
+      .faq-answer {
+        font-size: 11px;
+      }
+      .toggle {
+        font-size: 14px;
+      }
+    }
+  }
+}

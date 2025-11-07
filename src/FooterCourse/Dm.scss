@@ -1,0 +1,390 @@
+.Dm {
+  .Dm-hero {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 140px 200px;
+    flex-wrap: wrap;
+
+    background: radial-gradient(100% 150% at center top, #ffffff 40%, #ffdfae 62%, transparent 50%);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .Dm-hero-content-left {
+      flex: 1;
+      max-width: 47%;
+
+      h2 {
+        font-size: 18px;
+        color: #525252;
+        margin-bottom: 8px;
+      }
+
+      h1 {
+        font-size: 42px;
+        font-weight: 800;
+        margin-bottom: 20px;
+        color: #222;
+      }
+
+      p {
+        font-size: 18px;
+        color: #000;
+        line-height: 1.6;
+      }
+
+      .Dm-dream-job-text {
+        font-size: 22px;
+        color: #2c7a7b;
+        font-weight: 700;
+        margin-top: 24px;
+      }
+
+      .Dm-star-rating-box {
+        margin-top: 16px;
+        background: #fff6e5;
+        border: 1px solid #ffd700;
+        border-radius: 8px;
+        padding: 12px 16px;
+        display: inline-block;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+
+        .Dm-stars {
+          font-size: 20px;
+          color: #f6b500;
+          letter-spacing: 2px;
+          margin-bottom: 4px;
+        }
+
+        .Dm-rating-label {
+          font-size: 14px;
+          color: #444;
+          font-weight: 500;
+        }
+      }
+    }
+
+    .Dm-hero-box {
+      text-align: center;
+      padding: 40px 20px;
+      background: #fef9f5;
+
+      .Dm-logo {
+        width: 240px;
+        margin-bottom: 12px;
+      }
+
+      .Dm-cert-text {
+        font-size: 20px;
+        font-weight: 600;
+        color: #1e3a8a;
+      }
+
+      .Dm-call-text {
+        margin: 10px 0;
+        color: #374151;
+      }
+
+      .Dm-enquiry-btn {
+        background: #f97316;
+        color: #fff;
+        padding: 10px 20px;
+        font-weight: 600;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: all 0.3s;
+
+        &:hover {
+          background: #ea580c;
+        }
+      }
+    }
+  }
+}
+  .Dm-interactive-topics {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 40px 250px;
+  background-color: #f9fbfd;
+  gap: 50px;
+  
+  .Dm-left-content {
+    flex: 1;
+
+    h2 {
+      font-size: 2rem;
+      color: #1e293b;
+      margin-bottom: 30px;
+    }
+
+    .Dm-topics-list {
+      .Dm-topic {
+        margin-bottom: 24px;
+        cursor: pointer;
+
+        h3 {
+          font-size: 1.2rem;
+          color: #0f172a;
+          transition: color 0.3s;
+        }
+
+        &:hover h3 {
+          color: #f97316;
+        }
+
+        &.active h3 {
+          color: #f97316;
+        }
+
+        .Dm-description {
+          font-size: 1rem;
+          color: #475569;
+          margin-top: 10px;
+          transition: all 0.3s ease-in-out;
+        }
+      }
+    }
+  }
+
+  .Dm-right-image {
+    flex: 1;
+    text-align: center;
+
+    img {
+      max-width: 50%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    padding: 20px;
+
+    .Dm-right-image {
+      margin-top: 30px;
+
+      img {
+        max-width: 100%;
+        margin: auto;
+      }
+    }
+  }
+}
+
+ 
+ .Dm-right-image {
+    position: relative;
+    flex: 1;
+    text-align: center;
+    max-width: 500px;
+    height: 500px;
+    margin: auto;
+    background: url('../assets/Dm/DmBG.jpg') no-repeat center center;
+    background-size: contain;
+
+    img {
+      width: 100%;
+      height: auto;
+      //position: relative;
+      z-index: 2;
+      margin-top: 35%;
+      position: absolute;
+      border-radius: 8px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  // Media queries for responsiveness
+@media (max-width: 1200px) {
+  .Dm {
+    .Dm-hero {
+      padding: 100px 100px;
+      gap: 30px;
+
+      .Dm-hero-content-left {
+        max-width: 50%;
+
+        h1 {
+          font-size: 36px;
+        }
+
+        p {
+          font-size: 16px;
+        }
+
+        .Dm-dream-job-text {
+          font-size: 20px;
+        }
+      }
+
+      .Dm-hero-box {
+        padding: 30px 16px;
+
+        .Dm-logo {
+          width: 200px;
+        }
+
+        .Dm-cert-text {
+          font-size: 18px;
+        }
+
+        .Dm-call-text {
+          font-size: 16px;
+        }
+      }
+    }
+
+    .Dm-interactive-topics {
+      padding: 40px 120px;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .Dm {
+    .Dm-hero {
+      flex-direction: column;
+      align-items: center;
+      padding: 80px 40px;
+
+      .Dm-hero-content-left {
+        max-width: 100%;
+        text-align: center;
+
+        h1 {
+          font-size: 32px;
+        }
+
+        h2, p {
+          text-align: center;
+        }
+      }
+
+      .Dm-hero-box {
+        margin-top: 30px;
+      }
+    }
+
+    .Dm-interactive-topics {
+      padding: 40px 60px;
+      flex-direction: column;
+
+      .Dm-right-image {
+        margin-top: 30px;
+        max-width: 100%;
+        height: auto;
+
+        img {
+          position: relative;
+          margin-top: 0;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .Dm {
+    .Dm-hero {
+      padding: 60px 20px;
+
+      .Dm-hero-content-left {
+        h1 {
+          font-size: 28px;
+        }
+
+        p {
+          font-size: 15px;
+        }
+      }
+
+      .Dm-hero-box {
+        padding: 24px 14px;
+
+        .Dm-enquiry-btn {
+          width: 100%;
+        }
+      }
+    }
+
+    .Dm-interactive-topics {
+      padding: 20px;
+
+      .Dm-left-content {
+        h2 {
+          font-size: 1.5rem;
+        }
+
+        .Dm-topic {
+          h3 {
+            font-size: 1rem;
+          }
+
+          .Dm-description {
+            font-size: 0.9rem;
+          }
+        }
+      }
+    }
+
+    .Dm-right-image {
+      height: auto;
+      background-size: cover;
+
+      img {
+        position: relative;
+        margin-top: 0;
+        border-radius: 6px;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .Dm {
+    .Dm-hero {
+      padding: 40px 12px;
+
+      .Dm-hero-content-left {
+        h1 {
+          font-size: 24px;
+        }
+
+        .Dm-dream-job-text {
+          font-size: 18px;
+        }
+      }
+
+      .Dm-hero-box {
+        padding: 20px;
+
+        .Dm-cert-text {
+          font-size: 16px;
+        }
+
+        .Dm-call-text {
+          font-size: 14px;
+        }
+      }
+    }
+
+    .Dm-interactive-topics {
+      .Dm-left-content {
+        h2 {
+          font-size: 1.25rem;
+        }
+
+        .Dm-topic {
+          .Dm-description {
+            font-size: 0.85rem;
+          }
+        }
+      }
+    }
+  }
+}

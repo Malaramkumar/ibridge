@@ -1,0 +1,254 @@
+.interactive-syllabus {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 20px;
+  background: #ffffff;
+  gap: 80px;
+  max-width: 945px;
+  margin: auto;
+  
+  .syllabus-block {
+    max-width: 1200px;
+    margin:auto ;
+    display: flex;
+    gap: 60px;
+    align-items: flex-start;
+    justify-content: space-between;
+    background: #7bb8ff;
+    padding: 1rem;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      gap: 30px;
+    }
+  }
+.left-panel {
+  flex: 1;
+  max-height: 640px; // 👈 Optional: restrict height of the panel
+  overflow-y: auto;  // 👈 Scrollbar will appear if content overflows
+  padding-right: 10px; // Prevent scrollbar from overlapping content
+
+  h2 {
+    font-size: 20px;
+    padding: 12px;
+        margin-bottom: 24px;
+    
+    color: #1e3a8a;
+  }
+
+  .module-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    overflow-y: auto;
+    max-height: 500px; // 👈 Adjust height as needed
+    padding-right: 6px; // 👈 Optional padding for visual spacing
+
+    /* Optional custom scrollbar styling */
+    &::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #d1d5db; // gray-300
+      border-radius: 4px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background-color: transparent;
+    }
+
+    .module {
+      background: #fff;
+      padding: 16px;
+      border-left: 5px solid transparent;
+      cursor: pointer;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+
+      h3 {
+        font-size: 18px;
+        color: #1f2937;
+      }
+
+      .duration {
+        font-size: 14px;
+        color: #6b7280;
+        margin-top: 6px;
+      }
+
+      &:hover {
+        border-left: 5px solid #f97316;
+        background-color: #fef3c7;
+      }
+
+      &.active {
+        border-left: 5px solid #f97316;
+        background-color: #ffedd5;
+      }
+    }
+  }
+}
+
+  .right-panel {
+    flex: 2;
+    background: #ffffff;
+    padding: 24px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+    h3 {
+      font-size: 22px;
+      color: #111827;
+      margin-bottom: 12px;
+    }
+
+    .duration-label {
+      color: #6b7280;
+      margin-bottom: 16px;
+    }
+
+    .topics {
+      list-style: none;
+      padding-left: 0;
+
+      li {
+        margin-bottom: 10px;
+        color: #374151;
+        font-size: 18px;
+        padding-left: 20px;
+        position: relative;
+
+        
+      }
+    }
+  }
+
+  
+  // Responsive behavior
+  @media (max-width: 768px) {
+    padding: 30px 20px;
+
+    .left-panel, .right-panel {
+      width: 100%;
+    }
+
+    .right-panel {
+      margin-top: 20px;
+    }
+  }
+}
+
+.navigate-btn {
+  display: inline-block;
+  margin-top: 15px;
+  background-color: #1e3a8a;
+  color: #fff;
+  padding: 8px 16px;
+  font-size: 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #3b82f6;
+  }
+}
+
+@media (max-width: 768px) {
+  .interactive-syllabus {
+    padding: 24px 16px;
+    gap: 50px;
+
+    .syllabus-block {
+      flex-direction: column;
+      gap: 30px;
+      padding: 1rem;
+    }
+
+    .left-panel, .right-panel {
+      width: 100%;
+    }
+
+    .right-panel {
+      margin-top: 0;
+      padding: 20px;
+
+      h3 {
+        font-size: 20px;
+      }
+
+      .topics li {
+        font-size: 16px;
+      }
+    }
+
+    .left-panel {
+      h2 {
+        font-size: 18px;
+      }
+
+      .module-list .module {
+        h3 {
+          font-size: 16px;
+        }
+
+        .duration {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+
+  .navigate-btn {
+    font-size: 13px;
+    padding: 7px 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .interactive-syllabus {
+    padding: 20px 12px;
+    gap: 40px;
+
+    .syllabus-block {
+      padding: 0.75rem;
+    }
+
+    .left-panel {
+      h2 {
+        font-size: 16px;
+      }
+
+      .module-list .module {
+        padding: 14px;
+
+        h3 {
+          font-size: 15px;
+        }
+
+        .duration {
+          font-size: 12px;
+        }
+      }
+    }
+
+    .right-panel {
+      padding: 16px;
+
+      h3 {
+        font-size: 18px;
+      }
+
+      .topics li {
+        font-size: 15px;
+      }
+    }
+  }
+
+  .navigate-btn {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+}

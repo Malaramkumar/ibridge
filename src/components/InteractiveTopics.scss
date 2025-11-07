@@ -1,0 +1,147 @@
+.interactive-topics {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1100px;
+  margin: auto;
+  padding: 40px;
+  background-color: #f9fbfd;
+  gap: 50px;
+
+  .left-content {
+    flex: 1;
+
+    h2 {
+      font-size: 2rem;
+      color: #1e293b;
+      margin-bottom: 30px;
+    }
+
+    .topics-list {
+      .topic {
+        margin-bottom: 24px;
+        cursor: pointer;
+
+        h3 {
+          font-size: 1.2rem;
+          color: #0f172a;
+          transition: color 0.3s;
+        }
+
+        &:hover h3,
+        &.active h3 {
+          color: #f97316;
+        }
+
+        .description {
+          font-size: 1rem;
+          color: #475569;
+          margin-top: 10px;
+          transition: all 0.3s ease-in-out;
+        }
+      }
+    }
+  }
+
+  .right-image {
+    flex: 1;
+    text-align: center;
+
+    img {
+      max-width: 50%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  /* ─────────────────────────────────────
+     📱 Medium Tablet: ≤ 1024px
+  ───────────────────────────────────── */
+  @media (max-width: 1024px) {
+    padding: 30px;
+    gap: 30px;
+
+    .left-content {
+      h2 {
+        font-size: 1.8rem;
+      }
+
+      .topics-list {
+        .topic {
+          h3 {
+            font-size: 1.1rem;
+          }
+        }
+      }
+    }
+
+    .right-image img {
+      max-width: 60%;
+    }
+  }
+
+  /* ─────────────────────────────────────
+     📱 Tablet & Mobile: ≤ 768px
+  ───────────────────────────────────── */
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+    gap: 25px;
+
+    .left-content {
+      text-align: center;
+
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      .topics-list {
+        .topic {
+          h3 {
+            font-size: 1rem;
+          }
+
+          .description {
+            font-size: 0.95rem;
+          }
+        }
+      }
+    }
+
+    .right-image {
+      margin-top: 30px;
+
+      img {
+        max-width: 80%;
+      }
+    }
+  }
+
+  /* ─────────────────────────────────────
+     📱 Small Mobile: ≤ 480px
+  ───────────────────────────────────── */
+  @media (max-width: 480px) {
+    padding: 20px;
+    gap: 20px;
+
+    .left-content {
+      h2 {
+        font-size: 1.3rem;
+      }
+
+      .topics-list {
+        .topic {
+          h3 {
+            font-size: 0.95rem;
+          }
+        }
+      }
+    }
+
+    .right-image img {
+      max-width: 100%;
+    }
+  }
+}

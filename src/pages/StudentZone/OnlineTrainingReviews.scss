@@ -1,0 +1,136 @@
+.online-training-reviews-container {
+  padding: 2rem;
+  margin-top: 8rem;
+  background-color: #f9f9f9;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.otr-heading {
+  font-size: 2.4rem;
+  text-align: center;
+  color: #1e1e2f;
+  margin-bottom: 0.5rem;
+}
+
+.otr-subheading {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.otr-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+.otr-card {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease;
+  border-left: 5px solid #4e8cff;
+}
+
+.otr-card:hover {
+  transform: translateY(-5px);
+}
+
+.otr-name {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 0.25rem;
+}
+
+.otr-course {
+  font-size: 1rem;
+  color: #4e8cff;
+  margin-bottom: 0.75rem;
+}
+
+.otr-feedback {
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+@media (max-width: 1200px) {
+  .online-training-reviews-container {
+    padding: 1.5rem;
+    margin-top: 5rem;
+  }
+  .otr-heading {
+    font-size: 2rem;
+  }
+  .otr-subheading {
+    font-size: 1rem;
+  }
+  .otr-grid {
+    gap: 1rem;
+  }
+  .otr-card {
+    padding: 1.2rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .online-training-reviews-container {
+    padding: 1rem;
+    margin-top: 3rem;
+  }
+  .otr-heading {
+    font-size: 1.5rem;
+  }
+  .otr-subheading {
+    font-size: 0.95rem;
+  }
+  .otr-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.7rem;
+  }
+  .otr-card {
+    padding: 1rem;
+  }
+  .otr-name {
+    font-size: 1.1rem;
+  }
+  .otr-course {
+    font-size: 0.95rem;
+  }
+  .otr-feedback {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .online-training-reviews-container {
+    padding: 0.5rem;
+    margin-top: 1.5rem;
+  }
+  .otr-heading {
+    font-size: 1.1rem;
+  }
+  .otr-subheading {
+    font-size: 0.85rem;
+  }
+  .otr-grid {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+  .otr-card {
+    padding: 0.7rem;
+  }
+  .otr-name {
+    font-size: 1rem;
+  }
+  .otr-course {
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem;
+  }
+  .otr-feedback {
+    font-size: 0.85rem;
+  }
+}

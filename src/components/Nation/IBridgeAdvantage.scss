@@ -1,0 +1,189 @@
+// Variables
+$primary-color: #0d47a1; // Deep Blue
+$secondary-color: #1976d2; // Medium Blue
+$accent-color: #42a5f5; // Light Blue
+$text-color: #000000;
+$bg-color: #f8f9fa;
+$table-header-bg: #e3f2fd;
+$table-border-color: #dee2e6;
+
+// General Container
+.ibridge1-main{
+  background-color: #384a7a;
+}
+.advantage-container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: $text-color;
+  line-height: 1.7;
+  padding: 2.5rem;
+  background-color: $bg-color;
+  border-radius: 8px;
+  max-width: 1400px;
+  margin: 2rem auto;
+}
+
+// Header
+.advantage-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  
+  h1 {
+    font-size: 2.5rem;
+    color: $primary-color;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+}
+
+// General Section Styling
+.advantage-section {
+  margin-bottom: 2.5rem;
+
+  h2 {
+    font-size: 1.8rem;
+    color: $secondary-color;
+   
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  ul {
+    padding-left: 20px;
+    li {
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  .skills-list li {
+    strong {
+      color: $primary-color;
+    }
+  }
+}
+
+// Comparison Table
+.comparison-chart {
+  margin-top: 2rem;
+  text-align: center;
+
+  .comparison-wrapper {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 2rem;
+    align-items: start;
+  }
+
+  .comparison-col {
+    background: #fff;
+    border-radius: 12px;
+    padding: 2rem;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    text-align: left;
+
+    h3 {
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+      color: #0d47a1;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        margin: 0.75rem 0;
+        line-height: 1.6;
+
+        strong {
+          display: inline-block;
+          color: #2c3e50;
+          min-width: 120px;
+        }
+      }
+    }
+
+    &.conventional {
+      border-color: #c0392b;
+      h3 { color: #c0392b; }
+    }
+
+    &.ibridge {
+      border-color: #2980b9;
+      h3 { color: #2980b9; }
+    }
+  }
+
+  .vs {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #888;
+    align-self: center;
+  }
+}
+
+
+// Footer
+.advantage-footer {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 1.5rem;
+  background-color: $table-header-bg;
+  border-radius: 8px;
+  color: $primary-color;
+  margin-top: 2rem;
+}
+
+.faq-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.faq-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #0d47a1;
+}
+
+.faq-item {
+  border-bottom: 1px solid #ccc;
+  padding: 1rem 0;
+
+  &.active .faq-question {
+    color: #0d47a1;
+    font-weight: bold;
+  }
+}
+
+.faq-question {
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-icon {
+  font-size: 1.5rem;
+  margin-left: 1rem;
+}
+
+.faq-answer {
+  margin-top: 0.5rem;
+  color: #000000;
+  line-height: 1.5;
+  padding: 1.5rem;
+}

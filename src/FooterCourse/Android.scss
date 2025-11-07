@@ -1,0 +1,354 @@
+.Android {
+  .Android-hero {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 140px 200px;
+    flex-wrap: wrap;
+
+    background: radial-gradient(100% 150% at center top, #ffffff 40%, #ffdfae 62%, transparent 50%);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .Android-hero-content-left {
+      flex: 1;
+      max-width: 47%;
+
+      h2 {
+        font-size: 18px;
+        color: #525252;
+        margin-bottom: 8px;
+      }
+
+      h1 {
+        font-size: 42px;
+        font-weight: 800;
+        margin-bottom: 20px;
+        color: #222;
+      }
+
+      p {
+        font-size: 18px;
+        color: #000;
+        line-height: 1.6;
+      }
+
+      .Android-dream-job-text {
+        font-size: 22px;
+        color: #2c7a7b;
+        font-weight: 700;
+        margin-top: 24px;
+      }
+
+      .Android-star-rating-box {
+        margin-top: 16px;
+        background: #fff6e5;
+        border: 1px solid #ffd700;
+        border-radius: 8px;
+        padding: 12px 16px;
+        display: inline-block;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+
+        .Android-stars {
+          font-size: 20px;
+          color: #f6b500;
+          letter-spacing: 2px;
+          margin-bottom: 4px;
+        }
+
+        .Android-rating-label {
+          font-size: 14px;
+          color: #444;
+          font-weight: 500;
+        }
+      }
+    }
+
+    .Android-hero-box {
+      text-align: center;
+      padding: 40px 20px;
+      border-radius: 15px;       
+      background: #fef9f5;
+
+      .Android-logo {
+        width: 240px;
+        margin-bottom: 12px;
+      }
+
+      .Android-cert-text {
+        font-size: 20px;
+        font-weight: 600;
+        color: #1e3a8a;
+      }
+
+      .Android-call-text {
+        margin: 10px 0;
+        color: #374151;
+      }
+
+      .Android-enquiry-btn {
+        background: #f97316;
+        color: #fff;
+        padding: 10px 20px;
+        font-weight: 600;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: all 0.3s;
+
+        &:hover {
+          background: #ea580c;
+        }
+      }
+    }
+  }
+}
+  .Android-interactive-topics {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 40px 250px;
+  background-color: #f9fbfd;
+  gap: 50px;
+
+  .Android-left-content {
+    flex: 1;
+
+    h2 {
+      font-size: 2rem;
+      color: #1e293b;
+      margin-bottom: 30px;
+    }
+
+    .Android-topics-list {
+      .Android-topic {
+        margin-bottom: 24px;
+        cursor: pointer;
+
+        h3 {
+          font-size: 1.2rem;
+          color: #0f172a;
+          transition: color 0.3s;
+        }
+
+        &:hover h3 {
+          color: #f97316;
+        }
+
+        &.active h3 {
+          color: #f97316;
+        }
+
+        .Android-description {
+          font-size: 1rem;
+          color: #475569;
+          margin-top: 10px;
+          transition: all 0.3s ease-in-out;
+        }
+      }
+    }
+  }
+
+  .Android-right-image {
+    flex: 1;
+    text-align: center;
+
+    img {
+      max-width: 85%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    padding: 20px;
+
+    .Android-right-image {
+      margin-top: 30px;
+
+      img {
+        max-width: 100%;
+        margin-left: -15rem;
+        
+      }
+    }
+  }
+}
+
+ 
+.Android-right-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('../assets/Android/Android-BG.jpg'); // 👈 Your background image
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 40px;
+  border-radius: 16px;
+  min-height: 400px; // adjust as needed
+
+  .image-wrapper {
+    max-width: 100%;
+    max-height: 100%;
+    position: relative;
+    z-index: 2;
+
+    img {
+      width: 100%;
+      height: auto;
+      margin-right: -90%;
+      object-fit: contain;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    }
+  }
+}
+
+// Responsive breakpoints
+@media (max-width: 1200px) {
+  .Android {
+    .Android-hero {
+      padding: 100px 120px;
+      gap: 30px;
+
+      .Android-hero-content-left {
+        max-width: 100%;
+
+        h1 {
+          font-size: 36px;
+        }
+
+        p,
+        .Android-dream-job-text {
+          font-size: 16px;
+        }
+      }
+
+      .Android-hero-box {
+        padding: 30px 16px;
+
+        .Android-logo {
+          width: 200px;
+        }
+
+        .Android-cert-text {
+          font-size: 18px;
+        }
+      }
+    }
+
+    .Android-interactive-topics {
+      padding: 40px 100px;
+      gap: 40px;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .Android {
+    .Android-hero {
+      flex-direction: column;
+      align-items: center;
+      padding: 80px 60px;
+
+      .Android-hero-content-left,
+      .Android-hero-box {
+        max-width: 100%;
+        text-align: center;
+      }
+
+      .Android-hero-box {
+        padding: 30px;
+      }
+    }
+
+    .Android-interactive-topics {
+      flex-direction: column;
+      padding: 40px 40px;
+      gap: 30px;
+
+      .Android-right-image {
+        margin-top: 20px;
+
+        img {
+          max-width: 100%;
+        }
+      }
+    }
+
+    .Android-right-image {
+      flex-direction: column;
+      padding: 30px;
+      min-height: auto;
+
+      .image-wrapper {
+        img {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .Android {
+    .Android-hero {
+      padding: 60px 30px;
+      gap: 20px;
+
+      .Android-hero-content-left h1 {
+        font-size: 28px;
+      }
+
+      .Android-hero-box .Android-logo {
+        width: 180px;
+      }
+    }
+
+    .Android-interactive-topics {
+      padding: 30px 20px;
+    }
+
+    .Android-right-image {
+      padding: 20px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .Android {
+    .Android-hero {
+      padding: 40px 20px;
+
+      .Android-hero-content-left h1 {
+        font-size: 24px;
+      }
+
+      .Android-hero-box {
+        padding: 20px;
+
+        .Android-enquiry-btn {
+          padding: 8px 16px;
+          font-size: 14px;
+        }
+      }
+    }
+
+    .Android-interactive-topics {
+      padding: 20px;
+    }
+
+    .Android-right-image {
+      padding: 16px;
+      border-radius: 12px;
+
+      .image-wrapper img {
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+      }
+    }
+  }
+}

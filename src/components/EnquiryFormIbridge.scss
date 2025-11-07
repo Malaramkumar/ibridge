@@ -1,0 +1,139 @@
+.enquiry-form-container {
+    background: #fff;
+    padding: 2em;
+    margin: 2em auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 90%;
+}
+
+.enquiry-form-container h2 {
+    margin-top: 0;
+    margin-bottom: 1em;
+    text-align: center;
+    color: #333;
+}
+
+.input-group {
+    margin-bottom: 1.2em;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 0.5em;
+    color: #555;
+    font-weight: bold;
+}
+
+.input-group input,
+.input-group textarea,
+.input-group select {
+    width: 100%;
+    padding: 0.8em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+.input-group input:focus,
+.input-group textarea:focus,
+.input-group select:focus {
+    outline: none;
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.input-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 1em;
+    border: none;
+    border-radius: 4px;
+    background-color: #007BFF;
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+}
+
+.status-message {
+    text-align: center;
+    margin-top: 1em;
+    color: #28a745;
+    font-weight: bold;
+}
+// Button to trigger the form
+.open-enquiry-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    // Position it wherever you like on the page, e.g.:
+     position: fixed;
+     bottom: 20px;
+     right: 20px;
+}
+
+// Full-screen overlay for the modal
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; // Ensure it's on top of other content
+}
+
+// The modal window itself
+.modal-content {
+    position: relative;
+    // The form styles will be applied via the .enquiry-form-container
+}
+
+// Close button for the modal
+.close-modal-btn {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: #fff;
+    border: 2px solid #333;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 1.5rem;
+    line-height: 28px;
+    text-align: center;
+    cursor: pointer;
+    z-index: 1010;
+}
+
+// Your existing form styles remain the same
+.enquiry-form-container {
+    background: #fff;
+    padding: 2em;
+    margin: 0; // Remove margin when inside the modal
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 90vw; // Use viewport width for responsiveness
+}
+
+

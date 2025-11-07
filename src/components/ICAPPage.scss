@@ -1,0 +1,217 @@
+.icap-page {
+  font-family: 'Lato', 'Arial', sans-serif;
+  color: #333;
+  background-color: #f5f7fa;
+  min-height: 100vh;
+  padding: 3rem 2rem;
+  perspective: 1000px; /* For tilt effect */
+
+  .icap-header {
+    text-align: center;
+    margin-bottom: 4rem;
+    padding: 2rem;
+    background-color: #fff;
+    border-bottom: 2px solid #e2e8f0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+
+    .icap-title {
+      font-size: 3rem;
+      font-weight: 700;
+      color: #1e3a8a;
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      transition: all 0.3s ease;
+    }
+
+    .icap-subtitle {
+      font-size: 1.6rem;
+      font-weight: 400;
+      color: #64748b;
+      max-width: 800px;
+      margin: 0 auto;
+      transition: all 0.3s ease;
+    }
+  }
+
+  .icap-section {
+    max-width: 1200px;
+    margin: 0 auto 4rem auto;
+    padding: 2.5rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    border-left: 4px solid #1e3a8a;
+    position: relative;
+    transform-style: preserve-3d; /* For tilt effect */
+    transition: all 0.3s ease;
+
+    .icap-section-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(45deg, rgba(30, 58, 138, 0.1), rgba(255, 207, 110, 0.1));
+      border-radius: 8px;
+      z-index: 1;
+      pointer-events: none; /* Prevents overlay from interfering with clicks */
+    }
+
+    &:hover {
+      transform: translateY(-5px) rotateX(5deg) rotateY(2deg); /* Lift and tilt */
+      box-shadow: 0 8px 20px rgba(30, 58, 138, 0.3);
+      border: 2px solid transparent;
+      border-image: linear-gradient(45deg, #1e3a8a, #ffcf6e) 1; /* Glowing border */
+    }
+
+    .icap-subheading {
+      font-size: 1.8rem;
+      font-weight: 600;
+      color: #1e3a8a;
+      margin-bottom: 1.5rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      transition: all 0.3s ease;
+      position: relative;
+      z-index: 2;
+    }
+
+    .icap-text {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: #4b5563;
+      margin-bottom: 1.5rem;
+      transition: all 0.3s ease;
+      position: relative;
+      z-index: 2;
+    }
+
+    .icap-list {
+      list-style: none;
+      padding-left: 0;
+      position: relative;
+      z-index: 2;
+
+      li {
+        font-size: 1.1rem;
+        line-height: 1.8;
+        color: #4b5563;
+        margin-bottom: 1.2rem;
+        padding-left: 1.5rem;
+        position: relative;
+        transition: all 0.3s ease;
+
+        &:before {
+          content: '›';
+          color: #1e3a8a;
+          position: absolute;
+          left: 0;
+          font-weight: 700;
+          transition: all 0.3s ease;
+        }
+
+        strong {
+          color: #1e3a8a;
+          font-weight: 600;
+          transition: all 0.3s ease;
+        }
+      }
+    }
+  }
+
+  .icap-cta {
+    text-align: center;
+    background-color: #1e3a8a;
+    color: #fff;
+    padding: 3rem;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(30, 58, 138, 0.2);
+    transition: all 0.3s ease;
+    position: relative;
+
+    .icap-section-overlay {
+      background: linear-gradient(45deg, rgba(255, 207, 110, 0.1), rgba(30, 58, 138, 0.1));
+    }
+
+    .icap-subheading {
+      color: #fff;
+      transition: all 0.3s ease;
+    }
+
+    .icap-text {
+      color: #e2e8f0;
+      font-size: 1.2rem;
+      font-style: normal;
+      transition: all 0.3s ease;
+    }
+
+    .icap-cta-button {
+      display: inline-block;
+      padding: 1rem 2rem;
+      background-color: #ffcf6e;
+      color: #1e3a8a;
+      font-weight: 600;
+      text-decoration: none;
+      border-radius: 6px;
+      margin-top: 1.5rem;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background-color: #f7c948;
+        transform: translateY(-2px);
+      }
+
+      &:active {
+        transform: scale(0.98);
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 2rem 1rem;
+
+    .icap-header {
+      margin-bottom: 2rem;
+      padding: 1.5rem;
+
+      .icap-title {
+        font-size: 2.2rem;
+      }
+
+      .icap-subtitle {
+        font-size: 1.3rem;
+      }
+    }
+
+    .icap-section {
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+
+      .icap-subheading {
+        font-size: 1.5rem;
+      }
+
+      .icap-text {
+        font-size: 1rem;
+      }
+
+      .icap-list li {
+        font-size: 1rem;
+      }
+    }
+
+    .icap-cta {
+      padding: 2rem;
+
+      .icap-text {
+        font-size: 1.1rem;
+      }
+
+      .icap-cta-button {
+        padding: 0.8rem 1.5rem;
+      }
+    }
+  }
+}

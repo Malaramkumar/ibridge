@@ -1,0 +1,124 @@
+.blog-container {
+  padding: 100px 40px;
+  background-color: #f8f9fb;
+
+  .blog-heading {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+  }
+
+  .blog-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+    transition: 0.3s ease-in-out;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    }
+
+    h2 {
+      font-size: 22px;
+      font-weight: 600;
+      margin-bottom: 10px;
+      color: #202020;
+    }
+
+    p {
+      font-size: 15px;
+      line-height: 1.6;
+      color: #555;
+    }
+  }
+
+  // Unique color styles per card
+  .java-training    { border-left: 5px solid #e44d26; }
+  .python-training  { border-left: 5px solid #3476c1; }
+  .aws-training     { border-left: 5px solid #ff9900; }
+  .fullstack-training { border-left: 5px solid #8e44ad; }
+  .data-science-training { border-left: 5px solid #27ae60; }
+  .devops-training { border-left: 5px solid #1abc9c; }
+  .dotnet-training { border-left: 5px solid #68217a; }
+  .android-training { border-left: 5px solid #3ddc84; }
+  .webdev-training { border-left: 5px solid #3498db; }
+  .cloud-training { border-left: 5px solid #00bcd4; }
+  .r-language-training { border-left: 5px solid #d35400; }
+  .mobileapp-training { border-left: 5px solid #00acc1; }
+  .vmware-training { border-left: 5px solid #607d8b; }
+  .digital-marketing-training { border-left: 5px solid #e91e63; }
+  .uiux-training { border-left: 5px solid #9c27b0; }
+}
+@media (max-width: 1200px) {
+  .blog-container {
+    padding: 60px 20px;
+    .blog-heading {
+      font-size: 30px;
+    }
+    .blog-grid {
+      gap: 18px;
+    }
+    .blog-card {
+      padding: 18px;
+      h2 {
+        font-size: 18px;
+      }
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .blog-container {
+    padding: 40px 10px;
+    .blog-heading {
+      font-size: 24px;
+    }
+    .blog-grid {
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+    .blog-card {
+      padding: 14px;
+      h2 {
+        font-size: 16px;
+      }
+      p {
+        font-size: 13px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .blog-container {
+    padding: 20px 2px;
+    .blog-heading {
+      font-size: 18px;
+    }
+    .blog-grid {
+      grid-template-columns: 1fr;
+      gap: 8px;
+    }
+    .blog-card {
+      padding: 10px;
+      h2 {
+        font-size: 14px;
+      }
+      p {
+        font-size: 12px;
+      }
+    }
+  }
+}

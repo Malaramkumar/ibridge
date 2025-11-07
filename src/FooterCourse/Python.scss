@@ -1,0 +1,424 @@
+.python {
+  .python-hero {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 140px 200px;
+    flex-wrap: wrap;
+
+    background: radial-gradient(100% 150% at center top, #ffffff 40%, #ffdfae 62%, transparent 50%);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .python-hero-content-left {
+      flex: 1;
+      max-width: 47%;
+
+      h2 {
+        font-size: 18px;
+        color: #525252;
+        margin-bottom: 8px;
+      }
+
+      h1 {
+        font-size: 42px;
+        font-weight: 800;
+        margin-bottom: 20px;
+        color: #222;
+      }
+
+      p {
+        font-size: 18px;
+        color: #000;
+        line-height: 1.6;
+      }
+
+      .python-dream-job-text {
+        font-size: 22px;
+        color: #2c7a7b;
+        font-weight: 700;
+        margin-top: 24px;
+      }
+
+      .python-star-rating-box {
+        margin-top: 16px;
+        background: #fff6e5;
+        border: 1px solid #ffd700;
+        border-radius: 8px;
+        padding: 12px 16px;
+        display: inline-block;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+
+        .python-stars {
+          font-size: 20px;
+          color: #f6b500;
+          letter-spacing: 2px;
+          margin-bottom: 4px;
+        }
+
+        .python-rating-label {
+          font-size: 14px;
+          color: #444;
+          font-weight: 500;
+        }
+      }
+    }
+
+    .python-hero-box {
+      text-align: center;
+      padding: 40px 20px;
+      border-radius: 20px;    
+      background: #fef9f5;
+
+      .python-logo {
+        width: 240px;
+        margin-bottom: 12px;
+      }
+
+      .python-cert-text {
+        font-size: 20px;
+        font-weight: 600;
+        color: #1e3a8a;
+      }
+
+      .python-call-text {
+        margin: 10px 0;
+        color: #374151;
+      }
+
+      .python-enquiry-btn {
+        background: #f97316;
+        color: #fff;
+        padding: 10px 20px;
+        font-weight: 600;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: all 0.3s;
+
+        &:hover {
+          background: #ea580c;
+        }
+      }
+    }
+  }
+}
+  .python-interactive-topics {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 40px 250px;
+  background-color: #f9fbfd;
+  gap: 50px;
+
+  .python-left-content {
+    flex: 1;
+
+    h2 {
+      font-size: 2rem;
+      color: #1e293b;
+      margin-bottom: 30px;
+    }
+
+    .python-topics-list {
+      .python-topic {
+        margin-bottom: 24px;
+        cursor: pointer;
+
+        h3 {
+          font-size: 1.2rem;
+          color: #0f172a;
+          transition: color 0.3s;
+        }
+
+        &:hover h3 {
+          color: #f97316;
+        }
+
+        &.active h3 {
+          color: #f97316;
+        }
+
+        .python-description {
+          font-size: 1rem;
+          color: #475569;
+          margin-top: 10px;
+          transition: all 0.3s ease-in-out;
+        }
+      }
+    }
+  }
+
+  .python-right-image {
+    flex: 1;
+    text-align: center;
+    border-radius: 40px;
+
+    img {
+      max-width: 80%;
+      height: auto;
+      margin-left: 86%;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    padding: 20px;
+
+    .python-right-image {
+      margin-top: 30px;
+
+      img {
+        max-width: 100%;
+        margin: auto;
+      }
+    }
+  }
+}
+
+ 
+.python-right-image {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  min-height: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  // Background image
+  background-image: url('../assets/python/python-BG.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+
+  img {
+    max-width: 80%;
+    height: auto;
+    position: relative;
+    z-index: 2; // bring it above the background
+  }
+}
+@media (max-width: 1280px) {
+  .python {
+    .python-hero {
+      padding: 100px 120px;
+      gap: 32px;
+
+      .python-hero-content-left {
+        max-width: 50%;
+
+        h1 {
+          font-size: 36px;
+        }
+
+        p,
+        .python-dream-job-text {
+          font-size: 16px;
+        }
+
+        .python-star-rating-box {
+          padding: 10px 14px;
+        }
+      }
+
+      .python-hero-box {
+        padding: 30px 20px;
+
+        .python-logo {
+          width: 200px;
+        }
+
+        .python-cert-text {
+          font-size: 18px;
+        }
+      }
+    }
+
+    .python-interactive-topics {
+      padding: 40px 120px;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .python {
+    .python-hero {
+      flex-direction: column;
+      align-items: center;
+      padding: 80px 60px;
+
+      .python-hero-content-left {
+        max-width: 100%;
+        text-align: center;
+
+        h1 {
+          font-size: 32px;
+        }
+
+        h2,
+        p,
+        .python-dream-job-text {
+          text-align: center;
+        }
+
+        .python-star-rating-box {
+          margin: 0 auto;
+        }
+      }
+
+      .python-hero-box {
+        .python-logo {
+          width: 180px;
+        }
+
+        .python-cert-text {
+          font-size: 17px;
+        }
+      }
+    }
+
+    .python-interactive-topics {
+      padding: 30px 60px;
+      flex-direction: column;
+      gap: 30px;
+
+      .python-left-content {
+        h2 {
+          font-size: 1.5rem;
+          text-align: center;
+        }
+
+        .python-topic h3 {
+          font-size: 1rem;
+        }
+      }
+
+      .python-right-image {
+        margin-left: 0;
+        img {
+          margin-left: 0;
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .python {
+    .python-hero {
+      padding: 60px 20px;
+
+      .python-hero-content-left {
+        h1 {
+          font-size: 28px;
+        }
+
+        h2,
+        p {
+          font-size: 16px;
+        }
+
+        .python-dream-job-text {
+          font-size: 18px;
+        }
+      }
+
+      .python-hero-box {
+        padding: 20px 16px;
+
+        .python-logo {
+          width: 150px;
+        }
+
+        .python-cert-text {
+          font-size: 16px;
+        }
+      }
+    }
+
+    .python-interactive-topics {
+      padding: 20px;
+      .python-left-content {
+        h2 {
+          font-size: 1.3rem;
+        }
+      }
+    }
+
+    .python-right-image {
+      min-height: 300px;
+      background-size: cover;
+
+      img {
+        max-width: 90%;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .python {
+    .python-hero {
+      padding: 40px 16px;
+
+      .python-hero-content-left {
+        h1 {
+          font-size: 24px;
+        }
+
+        .python-dream-job-text {
+          font-size: 16px;
+        }
+
+        p {
+          font-size: 15px;
+        }
+      }
+
+      .python-hero-box {
+        .python-logo {
+          width: 120px;
+        }
+
+        .python-cert-text {
+          font-size: 15px;
+        }
+
+        .python-enquiry-btn {
+          padding: 8px 16px;
+          font-size: 14px;
+        }
+      }
+    }
+
+    .python-interactive-topics {
+      gap: 20px;
+
+      .python-left-content {
+        .python-topic {
+          h3 {
+            font-size: 0.95rem;
+          }
+
+          .python-description {
+            font-size: 0.9rem;
+          }
+        }
+      }
+    }
+
+    .python-right-image {
+      background-size: contain;
+      min-height: 250px;
+
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+}

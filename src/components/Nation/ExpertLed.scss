@@ -1,0 +1,189 @@
+// Replicating the "ICAP" Design
+// Color Palette & Fonts
+$primary-color: #2c3e50; // Dark Blue/Grey
+$secondary-color: #3498db; // Bright Blue
+$accent-color: #2980b9; // Darker Blue
+$bg-color: #ecf0f1;
+$text-color: rgb(0, 0, 0);
+$table-header-bg: #bdc3c7;
+$table-border: #abb2b9;
+$font-stack: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+// Main Container
+.expert-training-main{
+  background-color: #384a7a;
+}
+.expert-training-container {
+  font-family: $font-stack;
+  color: $text-color;
+  background-color: $bg-color;
+  padding: 3rem;
+  max-width: 1300px;
+  margin: 2rem auto;
+  border-radius: 10px;
+}
+
+// Header
+.expert-training-header {
+  text-align: center;
+  margin-bottom: 3rem;
+
+  h1 {
+    font-size: 2.8rem;
+    color: $primary-color;
+    margin-bottom: 1rem;
+    font-weight: 700;
+  }
+}
+
+// Sections
+.expert-training-section {
+  margin-bottom: 2.5rem;
+
+  h2 {
+    font-size: 2rem;
+    color: $secondary-color;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    
+    display: inline-block;
+  }
+  
+  p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+  }
+}
+
+// Comparison Table (Styled like ICAP)
+.modern-comparison-section {
+  h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: $primary-color;
+  }
+
+  .table-wrapper {
+    overflow-x: auto;
+  }
+
+  .modern-comparison-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+
+    thead {
+      th {
+        background: linear-gradient(135deg, $secondary-color, $accent-color);
+        color: white;
+        padding: 1rem;
+        font-size: 1.1rem;
+        font-weight: 600;
+        text-align: center;
+
+        &:first-child {
+          background: $table-header-bg;
+          color: $text-color;
+        }
+      }
+    }
+
+    tbody {
+      td {
+        padding: 1rem;
+        border-bottom: 1px solid $table-border;
+        text-align: center;
+        font-size: 0.95rem;
+
+        .icon {
+          display: block;
+          font-size: 1.2rem;
+          margin-bottom: 0.3rem;
+        }
+
+        strong {
+          color: $primary-color;
+        }
+      }
+
+      tr:nth-child(even) {
+        background-color: #f8f9f9;
+      }
+
+      tr:hover {
+        background-color: lighten($secondary-color, 45%);
+        transition: 0.3s ease;
+      }
+
+      td:last-child {
+        background-color: lighten($accent-color, 42%);
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+
+// Footer (Styled like ICAP)
+.expert-training-footer {
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 500;
+  padding: 1.5rem;
+  background-color: darken($bg-color, 5%);
+  border-radius: 8px;
+  color: $primary-color;
+  margin-top: 3rem;
+  border-top: 3px solid $secondary-color;
+}
+
+.faq-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.faq-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #0d47a1;
+}
+
+.faq-item {
+  border-bottom: 1px solid #ccc;
+  padding: 1rem 0;
+
+  &.active .faq-question {
+    color: #0d47a1;
+    font-weight: bold;
+  }
+}
+
+.faq-question {
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-icon {
+  font-size: 1.5rem;
+  margin-left: 1rem;
+}
+
+.faq-answer {
+  margin-top: 0.5rem;
+  color: #000000;
+  line-height: 1.5;
+  padding: 1.5rem;
+}

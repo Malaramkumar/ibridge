@@ -1,0 +1,286 @@
+/* Base styles for the carousel */
+.carousel-main {
+    background-color: rgb(102, 76, 149);
+    padding: 4rem 0;
+}
+.carousel-container {
+    font-family: 'Cinzel', serif;
+    width: 1200px;
+    max-width: 90%;
+    height: 700px;
+    overflow: hidden;
+    position: relative;
+    margin: 50px auto;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+/* Wrapper for all slides */
+.carousel-wrapper {
+    display: flex;
+    height: 100%;
+    transition: transform 0.8s ease-in-out;
+}
+
+/* Individual flip card container */
+.flip-container {
+    height: 100%;
+    perspective: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    flex-shrink: 0;
+}
+
+/* The element that gets rotated */
+.flipper {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.flip-container.flipped .flipper {
+    transform: rotateY(180deg);
+}
+
+/* Front and back faces of the card */
+.front,
+.back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: center;
+    color: white;
+
+    /* Add an overlay for text readability */
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5); /* Default dark overlay */
+        border-radius: 10px;
+        z-index: 1;
+    }
+}
+
+.front {
+  
+    h3 {
+        font-size: 2.8rem;
+    }
+}
+
+.back {
+    transform: rotateY(180deg);
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+
+    h2 {
+        font-size: 2.7rem;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+        padding: 0 1rem;
+        line-height: 1.5;
+    }
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    transition: background-color 0.3s;
+    z-index: 2;
+
+    &:hover {
+        background-color: #0056b3;
+    }
+}
+
+/* Navigation dots */
+.carousel-nav {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    z-index: 10;
+}
+
+.nav-dot {
+    width: 12px;
+    height: 12px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+    padding: 0;
+
+    &.active {
+        background-color: #007bff;
+        transform: scale(1.2);
+    }
+}
+
+/* INDIVIDUAL CARD STYLING */
+
+/* Card 1 (index 0) */
+.card-0 {
+    .front{
+        h2{
+            color: #40d1ea;
+        }
+        h3{
+            font-size: 50px;
+            color: #fff;
+        }
+        p{
+            font-size: 30px;
+            font-style: italic;   
+            color: #f39c12;            
+        }
+    }
+    .back{
+        overflow: auto;
+        h2{
+            color: #40d1ea;
+            font-size: 3rem;
+        }
+        p{
+            font-size: 1.3rem;
+        }
+    }
+  .front::before, .back::before {
+    
+    background: rgba(45, 25, 80, 0.6); /* Purple overlay */
+   
+  }
+  button {
+    background-color: #9b59b6; 
+    &:hover {
+      background-color: #8e44ad;
+    }
+  }
+}
+
+/* Card 2 (index 1) */
+.card-1 {
+  .front::before, .back::before {
+    background: rgba(26, 188, 156, 0.5); /* Teal overlay */
+  }
+  button {
+    background-color: #1abc9c;
+    &:hover {
+      background-color: #16a085;
+    }
+  }
+}
+
+/* Card 3 (index 2) */
+.card-2 {
+  .front::before, .back::before {
+    background: rgba(231, 76, 60, 0.5); /* Red overlay */
+  }
+  button {
+    background-color: #e74c3c;
+    &:hover {
+      background-color: #c0392b;
+    }
+  }
+} 
+/* Card 4 (index 3) */
+.card-3 {
+  .front::before, .back::before {
+    background: rgba(243, 156, 18, 0.5); /* Orange overlay */
+  }
+  button {
+      background-color: #f39c12;
+    &:hover {
+      background-color: #e67e22;
+    }
+  }
+}
+
+
+/* MEDIA QUERIES */
+
+/* For Tablets (e.g., iPads) */
+@media (max-width: 768px) {
+    .carousel-container {
+        height: 500px;
+        max-width: 95%;
+    }
+    .content {
+        h2 {
+            font-size: 2rem;
+        }
+        p {
+            font-size: 1rem;
+        }
+    }
+    button {
+        padding: 8px 18px;
+        font-size: 14px;
+    }
+}
+
+/* For Mobile Phones */
+@media (max-width: 480px) {
+    .carousel-container {
+        height: 90vh;
+        max-width: 100%;
+        margin: 0;
+        border-radius: 0;
+        box-shadow: none;
+    }
+    .flip-container {
+        padding: 10px;
+    }
+    .content {
+        h2 {
+            font-size: 1.5rem;
+        }
+        p {
+            font-size: 0.9rem;
+            padding: 0 0.5rem;
+        }
+    }
+    .carousel-nav {
+        bottom: 10px;
+        gap: 8px;
+    }
+    .nav-dot {
+        width: 10px;
+        height: 10px;
+    }
+}

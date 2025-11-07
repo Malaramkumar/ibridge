@@ -1,0 +1,249 @@
+.internship-page {
+  max-width: 1400px;
+  margin: auto;
+  margin-top: 8rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.7;
+  background-color: #fefefe;
+  color: #222;
+
+  h1, h2 {
+    color: #2d2d2d;
+  }
+
+  p {
+    color: #444;
+    font-size: 16px;
+  }
+
+  ul {
+    margin-top: 10px;
+    padding-left: 20px;
+    li {
+      margin-bottom: 8px;
+    }
+  }
+}
+
+.internship-banner {
+  background-color: #f0f4ff;
+  padding: 40px 20px;
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 40px;
+
+  h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+
+  p {
+    font-size: 18px;
+    color: #555;
+  }
+}
+
+.internship-overview,
+.internship-benefits,
+.internship-domains,
+.internship-eligibility,
+.internship-certification,
+.internship-registration,
+.internship-faq {
+  margin-bottom: 50px;
+
+  h2 {
+    font-size: 26px;
+    margin-bottom: 15px;
+    border-left: 5px solid #377dff;
+    padding-left: 12px;
+  }
+}
+
+.domain-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 12px;
+  margin-top: 20px;
+
+  span {
+    background-color: #eef4ff;
+    padding: 10px 15px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 500;
+  }
+}
+
+.register-button {
+  background-color: #377dff;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 6px;
+  margin-top: 15px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #275fcc;
+  }
+}
+
+.faq-item {
+  background-color: #f8f8f8;
+  padding: 15px 20px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+
+  strong {
+    display: block;
+    margin-bottom: 6px;
+  }
+
+  p {
+    margin: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .internship-banner h1 {
+    font-size: 28px;
+  }
+
+  .internship-banner p,
+  .internship-overview p,
+  .internship-registration p {
+    font-size: 15px;
+  }
+
+  .register-button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .internship-page {
+    max-width: 1000px;
+    padding: 30px 10px;
+  }
+  .internship-banner {
+    padding: 30px 10px;
+    h1 {
+      font-size: 30px;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
+  .domain-grid {
+    gap: 8px;
+    span {
+      font-size: 15px;
+      padding: 8px 10px;
+    }
+  }
+  .internship-overview,
+  .internship-benefits,
+  .internship-domains,
+  .internship-eligibility,
+  .internship-certification,
+  .internship-registration,
+  .internship-faq {
+    h2 {
+      font-size: 22px;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .internship-page {
+    max-width: 800px;
+    padding: 20px 5px;
+    margin-top: 4rem;
+  }
+  .internship-banner {
+    padding: 20px 5px;
+    h1 {
+      font-size: 24px;
+    }
+    p {
+      font-size: 15px;
+    }
+  }
+  .domain-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 6px;
+    span {
+      font-size: 14px;
+      padding: 6px 8px;
+    }
+  }
+  .internship-overview,
+  .internship-benefits,
+  .internship-domains,
+  .internship-eligibility,
+  .internship-certification,
+  .internship-registration,
+  .internship-faq {
+    h2 {
+      font-size: 18px;
+    }
+  }
+  .register-button {
+    font-size: 14px;
+    padding: 10px 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .internship-page {
+    max-width: 100%;
+    padding: 10px 2px;
+    margin-top: 2rem;
+  }
+  .internship-banner {
+    padding: 10px 2px;
+    h1 {
+      font-size: 18px;
+    }
+    p {
+      font-size: 13px;
+    }
+  }
+  .domain-grid {
+    grid-template-columns: 1fr;
+    gap: 4px;
+    span {
+      font-size: 13px;
+      padding: 5px 6px;
+    }
+  }
+  .internship-overview,
+  .internship-benefits,
+  .internship-domains,
+  .internship-eligibility,
+  .internship-certification,
+  .internship-registration,
+  .internship-faq {
+    h2 {
+      font-size: 15px;
+      padding-left: 6px;
+    }
+    p, ul li {
+      font-size: 13px;
+    }
+  }
+  .register-button {
+    font-size: 12px;
+    padding: 8px 10px;
+    width: 100%;
+  }
+  .faq-item {
+    padding: 10px 8px;
+    font-size: 13px;
+  }
+}

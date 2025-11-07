@@ -1,0 +1,240 @@
+.narpavi-enhanced-wrapper {
+  padding-bottom: 60px;
+  margin: auto;
+  max-width: 1024px;
+}
+
+.narpavi-poster-section {
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 1rem;
+  margin-bottom: 3px;
+  background: linear-gradient(to left, #e6e11324, rgba(255, 230, 98, 0.839));
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px 40px;
+  gap: 40px;
+  flex-wrap: wrap;
+
+  .poster-left {
+    flex: 1;
+
+    h2 {
+      font-size: 42px;
+      font-weight: 800;
+      color: #f76b1c;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .tagline {
+      font-size: 18px;
+      color: #444;
+      margin-top: 12px;
+    }
+  }
+
+  .poster-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+
+    .poster-box {
+      background: white;
+      border-radius: 16px;
+      padding: 30px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+      max-width: 450px;
+      text-align: center;
+
+      h3 {
+        font-size: 22px;
+        font-weight: 700;
+        margin-bottom: 12px;
+        color: #222;
+      }
+
+      p {
+        font-size: 18px;
+        color: #000;
+        line-height: 1.6;
+        margin-bottom: 20px;
+      }
+
+      .enroll-btn {
+        background-color: #f76b1c;
+        color: white;
+        padding: 12px 24px;
+        border: none;
+        font-weight: 600;
+        font-size: 15px;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        &:hover {
+          background-color: #222;
+        }
+      }
+    }
+  }
+}
+
+.center-support-block {
+  text-align: center;
+  margin-top: 60px;
+
+  h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 12px;
+  }
+
+  .contact-info {
+    font-size: 20px;
+    font-weight: 600;
+    color: #f76b1c;
+    margin-bottom: 20px;
+  }
+
+  .callback-btn {
+    background-color: #f76b1c;
+    color: white;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+      background-color: #222;
+    }
+  }
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+  .narpavi-poster-section {
+    padding: 20px;
+
+    .poster-left h2 {
+      font-size: 36px;
+    }
+
+    .poster-box {
+      max-width: 400px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .narpavi-poster-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+
+    .poster-left {
+      h2 {
+        justify-content: center;
+        font-size: 32px;
+      }
+
+      .tagline {
+        font-size: 16px;
+      }
+    }
+
+    .poster-right {
+      .poster-box {
+        padding: 20px;
+        max-width: 100%;
+        margin-top: 20px;
+
+        h3 {
+          font-size: 20px;
+        }
+
+        p {
+          font-size: 16px;
+        }
+
+        .enroll-btn {
+          font-size: 14px;
+          padding: 10px 20px;
+        }
+      }
+    }
+  }
+
+  .center-support-block {
+    h3 {
+      font-size: 20px;
+    }
+
+    .contact-info {
+      font-size: 18px;
+    }
+
+    .callback-btn {
+      font-size: 14px;
+      padding: 10px 20px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .narpavi-poster-section {
+    padding: 16px;
+
+    .poster-left {
+      h2 {
+        font-size: 28px;
+        flex-direction: column;
+        gap: 6px;
+      }
+
+      .tagline {
+        font-size: 15px;
+      }
+    }
+
+    .poster-right .poster-box {
+      padding: 16px;
+
+      h3 {
+        font-size: 18px;
+      }
+
+      p {
+        font-size: 15px;
+      }
+
+      .enroll-btn {
+        padding: 10px 18px;
+        font-size: 13px;
+      }
+    }
+  }
+
+  .center-support-block {
+    padding: 0 10px;
+
+    h3 {
+      font-size: 18px;
+    }
+
+    .contact-info {
+      font-size: 16px;
+    }
+
+    .callback-btn {
+      font-size: 13px;
+      padding: 10px 16px;
+    }
+  }
+}

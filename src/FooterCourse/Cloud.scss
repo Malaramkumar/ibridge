@@ -1,0 +1,418 @@
+.Cloud {
+  .Cloud-hero {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 140px 200px;
+    flex-wrap: wrap;
+
+    background: radial-gradient(100% 150% at center top, #ffffff 40%, #ffdfae 62%, transparent 50%);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .Cloud-hero-content-left {
+      flex: 1;
+      max-width: 47%;
+
+      h2 {
+        font-size: 18px;
+        color: #525252;
+        margin-bottom: 8px;
+      }
+
+      h1 {
+        font-size: 42px;
+        font-weight: 800;
+        margin-bottom: 20px;
+        color: #222;
+      }
+
+      p {
+        font-size: 18px;
+        color: #000;
+        line-height: 1.6;
+      }
+
+      .Cloud-dream-job-text {
+        font-size: 22px;
+        color: #2c7a7b;
+        font-weight: 700;
+        margin-top: 24px;
+      }
+
+      .Cloud-star-rating-box {
+        margin-top: 16px;
+        background: #fff6e5;
+        border: 1px solid #ffd700;
+        border-radius: 8px;
+        padding: 12px 16px;
+        display: inline-block;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+
+        .Cloud-stars {
+          font-size: 20px;
+          color: #f6b500;
+          letter-spacing: 2px;
+          margin-bottom: 4px;
+        }
+
+        .Cloud-rating-label {
+          font-size: 14px;
+          color: #444;
+          font-weight: 500;
+        }
+      }
+    }
+
+    .Cloud-hero-box {
+      text-align: center;
+      padding: 40px 20px;
+      background: #fef9f5;
+
+      .Cloud-logo {
+        width: 240px;
+        margin-bottom: 12px;
+      }
+
+      .Cloud-cert-text {
+        font-size: 20px;
+        font-weight: 600;
+        color: #1e3a8a;
+      }
+
+      .Cloud-call-text {
+        margin: 10px 0;
+        color: #374151;
+      }
+
+      .Cloud-enquiry-btn {
+        background: #f97316;
+        color: #fff;
+        padding: 10px 20px;
+        font-weight: 600;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: all 0.3s;
+
+        &:hover {
+          background: #ea580c;
+        }
+      }
+    }
+  }
+}
+  .Cloud-interactive-topics {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 40px 250px;
+  background-color: #f9fbfd;
+  gap: 50px;
+
+  .Cloud-left-content {
+    flex: 1;
+
+    h2 {
+      font-size: 2rem;
+      color: #1e293b;
+      margin-bottom: 30px;
+    }
+
+    .Cloud-topics-list {
+      .Cloud-topic {
+        margin-bottom: 24px;
+        cursor: pointer;
+
+        h3 {
+          font-size: 1.2rem;
+          color: #0f172a;
+          transition: color 0.3s;
+        }
+
+        &:hover h3 {
+          color: #f97316;
+        }
+
+        &.active h3 {
+          color: #f97316;
+        }
+
+        .Cloud-description {
+          font-size: 1rem;
+          color: #475569;
+          margin-top: 10px;
+          transition: all 0.3s ease-in-out;
+        }
+      }
+    }
+  }
+
+  .Cloud-right-image {
+    flex: 1;
+    text-align: center;
+
+    img {
+      max-width: 85%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    padding: 20px;
+
+    .Cloud-right-image {
+      margin-top: 30px;
+
+      img {
+        max-width: 100%;
+        margin: -14rem;
+      }
+    }
+  }
+}
+
+ 
+.Cloud-right-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('../assets/Cloud/CloudBG.jpg'); // 👈 Your background image
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 40px;
+  border-radius: 16px;
+  min-height: 400px; // adjust as needed
+
+  .image-wrapper {
+    max-width: 100%;
+    max-height: 100%;
+    position: relative;
+    z-index: 2;
+
+    img {
+      width: 100%;
+      height: auto;
+      margin-right: -90%;
+      object-fit: contain;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .Cloud {
+    .Cloud-hero {
+      flex-direction: column;
+      padding: 80px 40px;
+      align-items: center;
+      text-align: center;
+
+      .Cloud-hero-content-left {
+        max-width: 100%;
+
+        h1 {
+          font-size: 36px;
+        }
+
+        p,
+        .Cloud-dream-job-text {
+          font-size: 16px;
+        }
+
+        .Cloud-star-rating-box {
+          margin: 20px auto 0;
+        }
+      }
+
+      .Cloud-hero-box {
+        margin-top: 30px;
+
+        .Cloud-logo {
+          width: 180px;
+        }
+
+        .Cloud-cert-text {
+          font-size: 18px;
+        }
+
+        .Cloud-call-text {
+          font-size: 16px;
+        }
+
+        .Cloud-enquiry-btn {
+          padding: 10px 16px;
+          font-size: 14px;
+        }
+      }
+    }
+
+    .Cloud-interactive-topics {
+      flex-direction: column;
+      padding: 40px 20px;
+      gap: 30px;
+
+      .Cloud-left-content {
+        h2 {
+          font-size: 1.8rem;
+          text-align: center;
+        }
+
+        .Cloud-topics-list {
+          .Cloud-topic {
+            h3 {
+              font-size: 1.1rem;
+            }
+
+            .Cloud-description {
+              font-size: 0.95rem;
+            }
+          }
+        }
+      }
+
+      .Cloud-right-image {
+        img {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .Cloud {
+    .Cloud-hero {
+      padding: 60px 20px;
+      gap: 30px;
+
+      .Cloud-hero-content-left {
+        h1 {
+          font-size: 28px;
+        }
+
+        p {
+          font-size: 15px;
+        }
+
+        .Cloud-dream-job-text {
+          font-size: 18px;
+        }
+
+        .Cloud-star-rating-box {
+          padding: 10px;
+        }
+      }
+
+      .Cloud-hero-box {
+        .Cloud-logo {
+          width: 150px;
+        }
+
+        .Cloud-cert-text {
+          font-size: 16px;
+        }
+
+        .Cloud-enquiry-btn {
+          font-size: 13px;
+          padding: 8px 14px;
+        }
+      }
+    }
+
+    .Cloud-interactive-topics {
+      padding: 30px 16px;
+
+      .Cloud-left-content {
+        h2 {
+          font-size: 1.6rem;
+        }
+
+        .Cloud-topics-list .Cloud-topic h3 {
+          font-size: 1rem;
+        }
+
+        .Cloud-description {
+          font-size: 0.9rem;
+        }
+      }
+    }
+
+    .Cloud-right-image {
+      padding: 20px;
+      min-height: 300px;
+
+      .image-wrapper {
+        img {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .Cloud {
+    .Cloud-hero {
+      padding: 40px 16px;
+      gap: 20px;
+
+      .Cloud-hero-content-left {
+        h1 {
+          font-size: 24px;
+        }
+
+        p,
+        .Cloud-dream-job-text {
+          font-size: 14px;
+        }
+
+        .Cloud-star-rating-box {
+          padding: 8px;
+        }
+      }
+
+      .Cloud-hero-box {
+        .Cloud-logo {
+          width: 120px;
+        }
+
+        .Cloud-cert-text {
+          font-size: 14px;
+        }
+
+        .Cloud-call-text {
+          font-size: 14px;
+        }
+
+        .Cloud-enquiry-btn {
+          font-size: 12px;
+          padding: 6px 12px;
+        }
+      }
+    }
+
+    .Cloud-interactive-topics {
+      .Cloud-left-content h2 {
+        font-size: 1.4rem;
+      }
+
+      .Cloud-topic h3 {
+        font-size: 0.95rem;
+      }
+
+      .Cloud-description {
+        font-size: 0.85rem;
+      }
+    }
+
+    .Cloud-right-image {
+      min-height: 250px;
+    }
+  }
+}

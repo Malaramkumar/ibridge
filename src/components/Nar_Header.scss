@@ -1,0 +1,173 @@
+.header {
+  width: 100%;
+}
+
+/* Top Bar */
+.top-info-bar {
+  background: linear-gradient(to right, #f96600, #fd893685);
+  color: white;
+  text-align: center;
+  padding: 6px 0;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+/* Logo Section */
+.logo-wrapper1 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+
+  .logo-image {
+    height: 70px;
+    margin-right: 10px;
+  }
+
+  .logo-title {
+    font-size: 28px;
+    font-weight: 800;
+    color: #000cb6;
+  }
+
+  .logo-subtext {
+    font-size: 16px;
+    color: green;
+    font-weight: 600;
+  }
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  position: relative;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  font-weight: 500;
+
+  li {
+    cursor: pointer;
+
+    &:hover {
+      color: #f76b1c;
+    }
+  }
+
+  .dropdown {
+    position: relative;
+
+    &:hover .dropdown-menu {
+      display: block;
+    }
+
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      top: 30px;
+      left: 0;
+      background: white;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      border-radius: 6px;
+      padding: 10px 0;
+      z-index: 1000;
+
+      li {
+        padding: 8px 20px;
+        white-space: nowrap;
+
+        &:hover {
+          background-color: #f5f5f5;
+          color: #f76b1c;
+        }
+      }
+    }
+  }
+}
+
+/* Hamburger for mobile */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+
+  .line {
+    width: 25px;
+    height: 3px;
+    background: #000;
+    transition: all 0.3s ease;
+  }
+
+  .line.open:nth-child(2) {
+    opacity: 0;
+  }
+
+  .line.open:nth-child(1) {
+    transform: rotate(45deg) translateY(8px);
+  }
+
+  .line.open:nth-child(3) {
+    transform: rotate(-45deg) translateY(-8px);
+  }
+}
+
+/* 🌐 Responsive Media Queries */
+@media (max-width: 992px) {
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    background-color: white;
+    padding: 20px;
+    gap: 15px;
+    display: none;
+
+    &.active {
+      display: flex;
+    }
+
+    .dropdown-menu {
+      position: static;
+      box-shadow: none;
+    }
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo-wrapper1 .logo-title {
+    font-size: 20px;
+  }
+
+  .top-info-bar {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-wrapper1 .logo-image {
+    height: 50px;
+  }
+
+  .logo-wrapper1 .logo-title {
+    font-size: 18px;
+  }
+
+  .nav-links {
+    font-size: 15px;
+  }
+}

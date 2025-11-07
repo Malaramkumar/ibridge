@@ -1,0 +1,362 @@
+.DotNet {
+  .DotNet-hero {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 140px 200px;
+    flex-wrap: wrap;
+
+    background: radial-gradient(100% 150% at center top, #ffffff 40%, #ffdfae 62%, transparent 50%);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .DotNet-hero-content-left {
+      flex: 1;
+      max-width: 47%;
+
+      h2 {
+        font-size: 18px;
+        color: #525252;
+        margin-bottom: 8px;
+      }
+
+      h1 {
+        font-size: 42px;
+        font-weight: 800;
+        margin-bottom: 20px;
+        color: #222;
+      }
+
+      p {
+        font-size: 18px;
+        color: #000;
+        line-height: 1.6;
+      }
+
+      .DotNet-dream-job-text {
+        font-size: 22px;
+        color: #2c7a7b;
+        font-weight: 700;
+        margin-top: 24px;
+      }
+
+      .DotNet-star-rating-box {
+        margin-top: 16px;
+        background: #fff6e5;
+        border: 1px solid #ffd700;
+        border-radius: 8px;
+        padding: 12px 16px;
+        display: inline-block;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+
+        .DotNet-stars {
+          font-size: 20px;
+          color: #f6b500;
+          letter-spacing: 2px;
+          margin-bottom: 4px;
+        }
+
+        .DotNet-rating-label {
+          font-size: 14px;
+          color: #444;
+          font-weight: 500;
+        }
+      }
+    }
+
+    .DotNet-hero-box {
+      text-align: center;
+      padding: 40px 20px;
+      border-radius: 15px;
+      background: #fef9f5;
+
+      .DotNet-logo {
+        width: 240px;
+        margin-bottom: 12px;
+      }
+
+      .DotNet-cert-text {
+        font-size: 20px;
+        font-weight: 600;
+        color: #1e3a8a;
+      }
+
+      .DotNet-call-text {
+        margin: 10px 0;
+        color: #374151;
+      }
+
+      .DotNet-enquiry-btn {
+        background: #f97316;
+        color: #fff;
+        padding: 10px 20px;
+        font-weight: 600;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: all 0.3s;
+
+        &:hover {
+          background: #ea580c;
+        }
+      }
+    }
+  }
+}
+  .DotNet-interactive-topics {
+  display: flex;
+  justify-content: space-between;
+  //align-items: flex-start;
+  padding: 40px 250px;
+  background-color: #f9fbfd;
+  gap: 50px;
+
+  .DotNet-left-content {
+    flex: 1;
+
+    h2 {
+      font-size: 2rem;
+      color: #1e293b;
+      margin-bottom: 30px;
+    }
+
+    .DotNet-topics-list {
+      .DotNet-topic {
+        margin-bottom: 24px;
+        cursor: pointer;
+
+        h3 {
+          font-size: 1.2rem;
+          color: #0f172a;
+          transition: color 0.3s;
+        }
+
+        &:hover h3 {
+          color: #f97316;
+        }
+
+        &.active h3 {
+          color: #f97316;
+        }
+
+        .DotNet-description {
+          font-size: 1rem;
+          color: #475569;
+          margin-top: 10px;
+          transition: all 0.3s ease-in-out;
+        }
+      }
+    }
+  }
+
+  .DotNet-right-image {
+    flex: 1;
+    text-align: center;
+
+    img {
+      max-width: 70%;
+      margin-top: 110px;
+      margin-right: -80%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    padding: 20px;
+
+    .DotNet-right-image {
+      margin-top: 30px;
+
+      img {
+        max-width: 100%;
+        margin: auto;
+      }
+    }
+  }
+}
+
+ 
+.DotNet-hero-box {
+  text-align: center;
+  padding: 40px 20px;
+  background: #fef9f5;
+
+  img.DotNet-image {
+    width: 400px;
+    height: 268px;
+    object-fit: cover;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+  }
+}
+
+@media (max-width: 1200px) {
+  .DotNet {
+    .DotNet-hero {
+      padding: 120px 100px;
+      gap: 32px;
+
+      .DotNet-hero-content-left {
+        max-width: 50%;
+
+        h1 {
+          font-size: 36px;
+        }
+
+        p {
+          font-size: 16px;
+        }
+      }
+
+      .DotNet-hero-box {
+        padding: 32px 16px;
+
+        .DotNet-logo {
+          width: 200px;
+        }
+
+        .DotNet-cert-text {
+          font-size: 18px;
+        }
+      }
+    }
+
+    .DotNet-interactive-topics {
+      padding: 40px 100px;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .DotNet {
+    .DotNet-hero {
+      flex-direction: column;
+      align-items: center;
+      padding: 100px 60px;
+
+      .DotNet-hero-content-left,
+      .DotNet-hero-box {
+        max-width: 100%;
+        text-align: center;
+      }
+
+      .DotNet-hero-content-left h1 {
+        font-size: 32px;
+      }
+    }
+
+    .DotNet-interactive-topics {
+      flex-direction: column;
+      padding: 40px 60px;
+      gap: 40px;
+
+      .DotNet-right-image img {
+        margin-top: 40px;
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .DotNet {
+    .DotNet-hero {
+      padding: 80px 30px;
+      gap: 24px;
+
+      .DotNet-hero-content-left h1 {
+        font-size: 28px;
+      }
+
+      .DotNet-hero-content-left p,
+      .DotNet-hero-content-left h2 {
+        font-size: 16px;
+      }
+
+      .DotNet-dream-job-text {
+        font-size: 18px;
+      }
+
+      .DotNet-hero-box {
+        padding: 24px 12px;
+
+        .DotNet-cert-text {
+          font-size: 16px;
+        }
+
+        .DotNet-enquiry-btn {
+          padding: 8px 16px;
+          font-size: 14px;
+        }
+
+        .DotNet-logo {
+          width: 180px;
+        }
+      }
+    }
+
+    .DotNet-interactive-topics {
+      padding: 30px 20px;
+
+      .DotNet-left-content h2 {
+        font-size: 1.5rem;
+      }
+
+      .DotNet-topics-list .DotNet-topic h3 {
+        font-size: 1.1rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .DotNet {
+    .DotNet-hero {
+      padding: 60px 20px;
+
+      .DotNet-hero-content-left h1 {
+        font-size: 24px;
+      }
+
+      .DotNet-hero-content-left p {
+        font-size: 15px;
+      }
+
+      .DotNet-hero-box {
+        padding: 20px 10px;
+
+        .DotNet-logo {
+          width: 150px;
+        }
+
+        .DotNet-enquiry-btn {
+          width: 100%;
+        }
+      }
+    }
+
+    .DotNet-interactive-topics {
+      padding: 20px;
+      gap: 30px;
+
+      .DotNet-left-content h2 {
+        font-size: 1.25rem;
+      }
+
+      .DotNet-topics-list .DotNet-topic h3 {
+        font-size: 1rem;
+      }
+
+      .DotNet-right-image img {
+        margin-top: 20px;
+        max-width: 100%;
+        border-radius: 8px;
+      }
+    }
+  }
+}

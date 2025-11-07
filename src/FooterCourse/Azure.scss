@@ -1,0 +1,353 @@
+.Azure {
+  .Azure-hero {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 140px 200px;
+    flex-wrap: wrap;
+
+    background: radial-gradient(100% 150% at center top, #ffffff 40%, #ffdfae 62%, transparent 50%);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .Azure-hero-content-left {
+      flex: 1;
+      max-width: 47%;
+
+      h2 {
+        font-size: 18px;
+        color: #525252;
+        margin-bottom: 8px;
+      }
+
+      h1 {
+        font-size: 42px;
+        font-weight: 800;
+        margin-bottom: 20px;
+        color: #222;
+      }
+
+      p {
+        font-size: 18px;
+        color: #000;
+        line-height: 1.6;
+      }
+
+      .Azure-dream-job-text {
+        font-size: 22px;
+        color: #2c7a7b;
+        font-weight: 700;
+        margin-top: 24px;
+      }
+
+      .Azure-star-rating-box {
+        margin-top: 16px;
+        background: #fff6e5;
+        border: 1px solid #ffd700;
+        border-radius: 8px;
+        padding: 12px 16px;
+        display: inline-block;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+
+        .Azure-stars {
+          font-size: 20px;
+          color: #f6b500;
+          letter-spacing: 2px;
+          margin-bottom: 4px;
+        }
+
+        .Azure-rating-label {
+          font-size: 14px;
+          color: #444;
+          font-weight: 500;
+        }
+      }
+    }
+
+    .Azure-hero-box {
+      text-align: center;
+      padding: 40px 20px;
+      background: #fef9f5;
+
+      .Azure-logo {
+        width: 240px;
+        margin-bottom: 12px;
+      }
+
+      .Azure-cert-text {
+        font-size: 20px;
+        font-weight: 600;
+        color: #1e3a8a;
+      }
+
+      .Azure-call-text {
+        margin: 10px 0;
+        color: #374151;
+      }
+
+      .Azure-enquiry-btn {
+        background: #f97316;
+        color: #fff;
+        padding: 10px 20px;
+        font-weight: 600;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: all 0.3s;
+
+        &:hover {
+          background: #ea580c;
+        }
+      }
+    }
+  }
+}
+  .Azure-interactive-topics {
+  display: flex;
+  justify-content: space-between;
+  //align-items: flex-start;
+  padding: 40px 250px;
+  background-color: #f9fbfd;
+  gap: 50px;
+
+  .Azure-left-content {
+    flex: 1;
+
+    h2 {
+      font-size: 2rem;
+      color: #1e293b;
+      margin-bottom: 30px;
+    }
+
+    .Azure-topics-list {
+      .Azure-topic {
+        margin-bottom: 24px;
+        cursor: pointer;
+
+        h3 {
+          font-size: 1.2rem;
+          color: #0f172a;
+          transition: color 0.3s;
+        }
+
+        &:hover h3 {
+          color: #f97316;
+        }
+
+        &.active h3 {
+          color: #f97316;
+        }
+
+        .Azure-description {
+          font-size: 1rem;
+          color: #475569;
+          margin-top: 10px;
+          transition: all 0.3s ease-in-out;
+        }
+      }
+    }
+  }
+
+  .Azure-right-image {
+    flex: 1;
+    text-align: center;
+
+    img {
+      max-width: 77%;
+      margin-top: 110px;
+      margin-right: -80%;
+      height: 300px;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    padding: 20px;
+
+    .Azure-right-image {
+      margin-top: 30px;
+
+      img {
+        max-width: 100%;
+        margin: auto;
+
+      }
+    }
+  }
+}
+
+ 
+.Azure-hero-box {
+  text-align: center;
+  padding: 40px 20px;
+  background: #fef9f5;
+
+  img.Azure-image {
+    width: 400px;
+    height: 268px;
+    object-fit: cover;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+  }
+}
+// 🌐 Responsive Media Queries for .Azure Section
+@media (max-width: 1200px) {
+  .Azure {
+    .Azure-hero {
+      padding: 100px 120px;
+      gap: 30px;
+
+      .Azure-hero-content-left {
+        max-width: 100%;
+
+        h1 {
+          font-size: 36px;
+        }
+
+        p,
+        .Azure-dream-job-text {
+          font-size: 16px;
+        }
+      }
+
+      .Azure-hero-box {
+        padding: 30px 16px;
+
+        .Azure-logo {
+          width: 200px;
+        }
+
+        .Azure-cert-text {
+          font-size: 18px;
+        }
+      }
+    }
+
+    .Azure-interactive-topics {
+      padding: 40px 100px;
+      gap: 40px;
+
+      .Azure-right-image img {
+        margin-right: -40%;
+        margin-top: 80px;
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .Azure {
+    .Azure-hero {
+      flex-direction: column;
+      align-items: center;
+      padding: 80px 60px;
+
+      .Azure-hero-content-left,
+      .Azure-hero-box {
+        max-width: 100%;
+        text-align: center;
+      }
+
+      .Azure-hero-box {
+        padding: 30px;
+      }
+    }
+
+    .Azure-interactive-topics {
+      flex-direction: column;
+      padding: 40px 40px;
+      gap: 30px;
+
+      .Azure-right-image {
+        margin-top: 20px;
+
+        img {
+          max-width: 100%;
+          margin-right: 0;
+          margin-top: 20px;
+        }
+      }
+    }
+
+    .Azure-hero-box img.Azure-image {
+      width: 320px;
+      height: auto;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .Azure {
+    .Azure-hero {
+      padding: 60px 30px;
+      gap: 20px;
+
+      .Azure-hero-content-left h1 {
+        font-size: 28px;
+      }
+
+      .Azure-hero-box .Azure-logo {
+        width: 180px;
+      }
+
+      .Azure-hero-box img.Azure-image {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .Azure-interactive-topics {
+      padding: 30px 20px;
+
+      .Azure-right-image img {
+        margin-top: 30px;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .Azure {
+    .Azure-hero {
+      padding: 40px 20px;
+
+      .Azure-hero-content-left h1 {
+        font-size: 24px;
+      }
+
+      .Azure-hero-box {
+        padding: 20px;
+
+        .Azure-enquiry-btn {
+          padding: 8px 16px;
+          font-size: 14px;
+        }
+
+        img.Azure-image {
+          width: 100%;
+          border-radius: 6px;
+        }
+      }
+    }
+
+    .Azure-interactive-topics {
+      padding: 20px;
+
+      .Azure-left-content h2 {
+        font-size: 1.5rem;
+      }
+
+      .Azure-topic h3 {
+        font-size: 1rem;
+      }
+
+      .Azure-description {
+        font-size: 0.95rem;
+      }
+    }
+  }
+}

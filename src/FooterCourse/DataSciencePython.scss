@@ -1,0 +1,376 @@
+.data-science {
+  .data-science-hero {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 140px 200px;
+    flex-wrap: wrap;
+
+    background: radial-gradient(100% 150% at center top, #ffffff 40%, #ffdfae 62%, transparent 50%);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .data-science-hero-content-left {
+      flex: 1;
+      max-width: 47%;
+
+      h2 {
+        font-size: 18px;
+        color: #525252;
+        margin-bottom: 8px;
+      }
+
+      h1 {
+        font-size: 42px;
+        font-weight: 800;
+        margin-bottom: 20px;
+        color: #222;
+      }
+
+      p {
+        font-size: 18px;
+        color: #000;
+        line-height: 1.6;
+      }
+
+      .data-science-dream-job-text {
+        font-size: 22px;
+        color: #2c7a7b;
+        font-weight: 700;
+        margin-top: 24px;
+      }
+
+      .data-science-star-rating-box {
+        margin-top: 16px;
+        background: #fff6e5;
+        border: 1px solid #ffd700;
+        border-radius: 8px;
+        padding: 12px 16px;
+        display: inline-block;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+
+        .data-science-stars {
+          font-size: 20px;
+          color: #f6b500;
+          letter-spacing: 2px;
+          margin-bottom: 4px;
+        }
+
+        .data-science-rating-label {
+          font-size: 14px;
+          color: #444;
+          font-weight: 500;
+        }
+      }
+    }
+
+    .data-science-hero-box {
+      text-align: center;
+      padding: 40px 20px;
+      border-radius: 15px;
+      background: #fef9f5;
+
+      .data-science-logo {
+        width: 240px;
+        margin-bottom: 12px;
+      }
+
+      .data-science-cert-text {
+        font-size: 20px;
+        font-weight: 600;
+        color: #1e3a8a;
+      }
+
+      .data-science-call-text {
+        margin: 10px 0;
+        color: #374151;
+      }
+
+      .data-science-enquiry-btn {
+        background: #f97316;
+        color: #fff;
+        padding: 10px 20px;
+        font-weight: 600;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: all 0.3s;
+
+        &:hover {
+          background: #ea580c;
+        }
+      }
+    }
+  }
+}
+  .data-science-interactive-topics {
+  display: flex;
+  justify-content: space-between;
+  //align-items: flex-start;
+  padding: 40px 250px;
+  background-color: #f9fbfd;
+  gap: 50px;
+
+  .data-science-left-content {
+    flex: 1;
+
+    h2 {
+      font-size: 2rem;
+      color: #1e293b;
+      margin-bottom: 30px;
+    }
+
+    .data-science-topics-list {
+      .data-science-topic {
+        margin-bottom: 24px;
+        cursor: pointer;
+
+        h3 {
+          font-size: 1.2rem;
+          color: #0f172a;
+          transition: color 0.3s;
+        }
+
+        &:hover h3 {
+          color: #f97316;
+        }
+
+        &.active h3 {
+          color: #f97316;
+        }
+
+        .data-science-description {
+          font-size: 1rem;
+          color: #475569;
+          margin-top: 10px;
+          transition: all 0.3s ease-in-out;
+        }
+      }
+    }
+  }
+
+  .data-science-right-image {
+    flex: 1;
+    text-align: center;
+    border-radius: 40px;
+
+    img {
+      max-width: 70%;
+      margin-top: 110px;
+      margin-right: -80%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    padding: 20px;
+
+    .data-science-right-image {
+      margin-top: 30px;
+
+      img {
+        max-width: 100%;
+        margin: auto;
+      }
+    }
+  }
+}
+
+ 
+.data-science-hero-box {
+  text-align: center;
+  padding: 40px 20px;
+  background: #fef9f5;
+
+  img.data-science-image {
+    width: 400px;
+    height: 268px;
+    object-fit: cover;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+  }
+}
+
+@media (max-width: 1024px) {
+  .data-science {
+    .data-science-hero {
+      padding: 100px 60px;
+      gap: 32px;
+      flex-direction: column;
+
+      .data-science-hero-content-left {
+        max-width: 100%;
+        text-align: center;
+
+        h1 {
+          font-size: 36px;
+        }
+
+        h2,
+        p,
+        .data-science-dream-job-text,
+        .data-science-rating-label {
+          text-align: center;
+        }
+
+        .data-science-star-rating-box {
+          margin: 0 auto;
+        }
+      }
+
+      .data-science-hero-box {
+        .data-science-logo {
+          width: 200px;
+        }
+
+        .data-science-cert-text {
+          font-size: 18px;
+        }
+      }
+    }
+
+    .data-science-interactive-topics {
+      padding: 30px 60px;
+      gap: 30px;
+      flex-direction: column;
+
+      .data-science-right-image img {
+        margin: 0 auto;
+        margin-top: 40px;
+        max-width: 80%;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .data-science {
+    .data-science-hero {
+      padding: 80px 20px;
+
+      .data-science-hero-content-left {
+        h1 {
+          font-size: 30px;
+        }
+
+        p {
+          font-size: 16px;
+        }
+
+        .data-science-dream-job-text {
+          font-size: 20px;
+        }
+      }
+
+      .data-science-hero-box {
+        padding: 30px 57px;
+
+        .data-science-enquiry-btn {
+          font-size: 14px;
+          padding: 8px 16px;
+        }
+      }
+    }
+
+    .data-science-interactive-topics {
+      padding: 24px 20px;
+
+      .data-science-left-content {
+        h2 {
+          font-size: 1.6rem;
+        }
+
+        .data-science-topic {
+          h3 {
+            font-size: 1.1rem;
+          }
+
+          .data-science-description {
+            font-size: 0.95rem;
+          }
+        }
+      }
+
+      .data-science-right-image img {
+        margin-top: 20px;
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .data-science {
+    .data-science-hero {
+      padding: 60px 16px;
+
+      .data-science-hero-content-left {
+        h1 {
+          font-size: 26px;
+        }
+
+        h2 {
+          font-size: 16px;
+        }
+
+        p {
+          font-size: 15px;
+        }
+
+        .data-science-dream-job-text {
+          font-size: 18px;
+        }
+      }
+
+      .data-science-hero-box {
+        .data-science-logo {
+          width: 180px;
+        }
+
+        .data-science-cert-text {
+          font-size: 16px;
+        }
+
+        .data-science-call-text {
+          font-size: 14px;
+        }
+
+        .data-science-enquiry-btn {
+          font-size: 13px;
+          padding: 6px 14px;
+        }
+      }
+    }
+
+    .data-science-interactive-topics {
+      padding: 20px 16px;
+
+      .data-science-left-content {
+        h2 {
+          font-size: 1.4rem;
+        }
+
+        .data-science-topic {
+          h3 {
+            font-size: 1rem;
+          }
+
+          .data-science-description {
+            font-size: 0.9rem;
+          }
+        }
+      }
+
+      .data-science-right-image img {
+        margin-top: 16px;
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}

@@ -1,0 +1,281 @@
+.MainHomeSlideindustry-skills {
+  font-family: 'Cinzel', serif;
+  color: #fff;
+  background: linear-gradient(135deg, #bfcdf0 0%, #1e293b 100%);
+  min-height: 100vh;
+  //padding: 2rem;
+  overflow-x: hidden;
+  section {
+    max-width: 100%;
+    margin: 0 auto 4rem auto;
+  }
+  .MainHomeSlidetitle {
+    font-size: 3rem;
+    color: #ffcf6e;
+    margin-bottom: 1.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+  h2 {
+    font-size: 2rem;
+    color: #ffcf6e;
+    text-align: center;
+    margin-bottom: 1rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  }
+  h3 {
+    font-size: 1.5rem;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  h4 {
+    font-size: 1.2rem;
+    color: #ffcf6e;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .MainHomeSlidepage-one {
+    .MainHomeSlidecontent-layout {
+      background-image: url("../../public/images/pulse_ind.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      margin-bottom: 2rem;
+      width: 100%;
+      min-height: 60vh;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      color: #fff;
+      position: relative;
+      overflow: hidden;
+      &:before {
+        content: '';
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(0deg, rgba(15, 23, 42, 0.7) 0%, rgba(15, 23, 42, 0.3) 100%);
+        z-index: 1;
+      }
+      .MainHomeSlidetitle {
+        position: absolute;
+        z-index: 2;
+        top: 15%;
+      }
+      .MainHomeSlidetext-content {
+        position: absolute;
+        z-index: 2;
+        top: 40%;
+      }
+      .MainHomeSlidetitle {
+        flex: 1;
+        text-align: left;
+        padding-left: 8rem;
+        font-weight: 700;
+      }
+      .MainHomeSlidetext-content {
+        flex: 1;
+        text-align: right;
+        padding: 4rem;
+        p {
+          text-align: justify;
+          max-width: 700px;
+        }
+      }
+      @media (max-width: 768px) {
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem;
+        .MainHomeSlidetitle {
+          text-align: center;
+          padding: 1rem;
+        }
+        .MainHomeSlidetext-content {
+          text-align: left;
+          padding: 1rem;
+          p {
+            text-align: center;
+          }
+        }
+      }
+    }
+    .MainHomeSlidedomains-carousel {
+      overflow: hidden;
+      position: relative;
+      height: 300px;
+      margin-top: 2rem;
+      @media (max-width: 768px) {
+        height: 200px;
+      }
+    }
+    .MainHomeSlidedomains-list {
+      display: flex;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      
+      align-items: flex-end;
+      
+      .MainHomeSlidedomain-card {
+        background-size: cover;
+        background-position: center;
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        border-radius: 12px;
+        margin-right: 1.5rem;
+        min-width: 270px;
+        height: 280px;
+        text-align: left;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        transition: all 0.4s ease;
+        .MainHomeSlidecard-overlay {
+          background: linear-gradient(135deg, rgba(15, 23, 42, 0.9) 0%, rgba(15, 23, 42, 0.6) 100%);
+          padding: 1.5rem;
+          border-radius: 12px;
+          height: 85%;
+          filter: contrast(0.9);
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          h3 {
+            font-size: 1.2rem;
+            color: #ffcf6e;
+            margin-bottom: 0.7rem;
+            text-transform: uppercase;
+          }
+          p {
+            font-size: 1rem;
+            line-height: 1.5;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+  .MainHomeSlidepage-two {
+    position: relative;
+    background-image: url("../../public/images/Slide3-1.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    padding: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.3) 100%);
+      z-index: 0;
+    }
+    > * {
+      position: relative;
+      z-index: 1;
+    }
+    .MainHomeSlidetitle {
+      color: #ffcf6e;
+      font-weight: 800;
+    }
+    p {
+      color: #fff;
+      max-width: 800px;
+      margin: 1.5rem auto;
+      font-weight: 400;
+    }
+    
+    h2 {
+      font-size: 2.2rem;
+      margin-top: 2.5rem;
+      max-width: 1100px;
+    }
+    .MainHomeSlidetagline {
+      font-size: 1.5rem;
+      font-style: italic;
+      color: #ffd700;
+      margin-bottom: 2rem;
+    }
+    .MainHomeSlideskills-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2.5rem;
+      margin-top: 2.5rem;
+      width: 100%;
+      
+      .MainHomeSlideskill-item {
+        background: linear-gradient(135deg, rgba(7, 33, 68, 0.9) 0%, rgba(30, 41, 59, 0.7) 100%);
+        padding: 2rem;
+        border-radius: 12px;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+        transition: all 0.4s ease;
+        cursor: pointer;
+        text-align: left;
+        .MainHomeSlideskill-icon {
+          font-size: 1.8rem;
+          margin-right: 1rem;
+          vertical-align: middle;
+        }
+    
+        h3 {
+          font-size: 1.3rem;
+          color: #e7af40;
+          margin-bottom: 0.8rem;
+          display: inline-flex;
+          align-items: center;
+        }
+    
+        p {
+          font-size: 1.1rem;
+          line-height: 1.7;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    section {
+      padding: 1rem;
+    }
+    .MainHomeSlidetitle {
+      font-size: 2rem;
+    }
+    h2 {
+      font-size: 1.5rem;
+    }
+    h3 {
+      font-size: 1.2rem;
+    }
+    p {
+      font-size: 1rem;
+    }
+    .MainHomeSlidepage-one .MainHomeSlidedomains-carousel {
+      height: 200px;
+    }
+    .MainHomeSlidepage-one .MainHomeSlidedomains-list .MainHomeSlidedomain-card {
+      min-width: 200px;
+      height: 200px;
+      margin-right: 1rem;
+    }
+    .MainHomeSlidepage-two {
+      padding: 2rem 1rem;
+      .MainHomeSlideskills-list {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+}

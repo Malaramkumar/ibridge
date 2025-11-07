@@ -1,0 +1,130 @@
+// Variables
+$primary-color: #2c3e50;
+$secondary-color: #3498db;
+$accent-color: #2980b9;
+$bg-color: #f9fafb;
+$text-color: #000000;
+$font-stack: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+// Container
+
+.learn-online-main{
+  background-color: #384a7a;
+}
+
+.learn-online-container {
+  font-family: $font-stack;
+  color: $text-color;
+  background: $bg-color;
+  padding: 3rem 2rem;
+  max-width: 1200px;
+  margin: 2rem auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+}
+
+// Header
+.learn-online-header {
+  text-align: center;
+  margin-bottom: 3rem;
+
+  h1 {
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: $primary-color;
+    margin-bottom: 0.5rem;
+  }
+
+  .sub-heading {
+    font-size: 1.25rem;
+    color: $secondary-color;
+    font-weight: 500;
+  }
+}
+
+// Sections
+.learn-online-section {
+  background: #fff;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+
+  h2 {
+    font-size: 1.5rem;
+    color: $secondary-color;
+    margin-bottom: 1rem;
+    border-left: 5px solid $accent-color;
+    padding-left: 0.75rem;
+    font-weight: 600;
+  }
+
+  p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+  }
+}
+
+// Footer
+.learn-online-footer {
+  margin-top: 3rem;
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 1.5rem;
+  background: $secondary-color;
+  color: #fff;
+  border-radius: 10px;
+  font-weight: 600;
+
+  strong {
+    color: #ffd700; // highlight "knowledge, flexibility, opportunity"
+  }
+}
+
+.faq-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.faq-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #0d47a1;
+}
+
+.faq-item {
+  border-bottom: 1px solid #ccc;
+  padding: 1rem 0;
+
+  &.active .faq-question {
+    color: #0d47a1;
+    font-weight: bold;
+  }
+}
+
+.faq-question {
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-icon {
+  font-size: 1.5rem;
+  margin-left: 1rem;
+}
+
+.faq-answer {
+  margin-top: 0.5rem;
+  color: #000000;
+  line-height: 1.5;
+  padding: 1.5rem;
+}

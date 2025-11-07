@@ -1,0 +1,240 @@
+.upcoming-batches-container {
+  padding: 40px 20px;
+  background: #ffffff;
+  max-width: 900px;
+  margin:auto ;
+
+  .heading {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    text-align: center;
+    color: #222;
+  }
+
+  .batches-table {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+
+    .batch-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 12px 16px;
+      border-bottom: 1px solid #eee;
+      background: #fafafa;
+
+      .cell {
+        flex: 1;
+        text-align: center;
+        font-size: 15px;
+        color: #333;
+      }
+
+      .buttons {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+
+        .fees-btn,
+        .availability-btn {
+          padding: 6px 12px;
+          font-size: 13px;
+          border-radius: 6px;
+          border: 1px solid #1a237e;
+          background: #fff;
+          color: #1a237e;
+          font-weight: bold;
+          cursor: pointer;
+
+          &:hover {
+            background: #1a237e;
+            color: #fff;
+          }
+        }
+      }
+    }
+
+    .batch-row:last-child {
+      border-bottom: none;
+    }
+  }
+
+  .custom-batch {
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    img {
+      width: 40px;
+    }
+
+    .custom-batch-btn {
+      background: linear-gradient(to right, #f76b1c, #ff5722);
+      color: #fff;
+      font-weight: bold;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 14px;
+
+      &:hover {
+        opacity: 0.9;
+      }
+    }
+  }
+
+  .training-options {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+
+    .training-box {
+      flex: 1;
+      min-width: 300px;
+      background: #fdfdfd;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 24px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+
+      h3 {
+        color: #0d47a1;
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 16px;
+      }
+
+      ul {
+        padding-left: 16px;
+        margin-bottom: 20px;
+
+        li {
+          font-size: 18px;
+          margin-bottom: 8px;
+          color: #333;
+        }
+      }
+
+      .enquire-btn {
+        background-color: #0d47a1;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        font-weight: bold;
+        border-radius: 6px;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #263238;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .upcoming-batches-container {
+    max-width: 1000px;
+    padding: 30px 10px;
+    .training-options {
+      gap: 16px;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .upcoming-batches-container {
+    max-width: 800px;
+    padding: 20px 5px;
+    .heading {
+      font-size: 22px;
+    }
+    .training-options {
+      flex-direction: column;
+      gap: 12px;
+      .training-box {
+        min-width: 220px;
+        padding: 18px;
+        h3 {
+          font-size: 16px;
+        }
+        ul li {
+          font-size: 15px;
+        }
+        .enquire-btn {
+          font-size: 13px;
+          padding: 8px 16px;
+        }
+      }
+    }
+    .custom-batch {
+      flex-direction: column;
+      gap: 8px;
+      .custom-batch-btn {
+        font-size: 13px;
+        padding: 10px 16px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .upcoming-batches-container {
+    max-width: 100%;
+    padding: 10px 2px;
+    .heading {
+      font-size: 18px;
+    }
+    .batches-table {
+      .batch-row {
+        flex-direction: column;
+        padding: 8px 6px;
+        .cell {
+          font-size: 13px;
+        }
+        .buttons {
+          gap: 6px;
+          .fees-btn,
+          .availability-btn {
+            font-size: 12px;
+            padding: 5px 10px;
+          }
+        }
+      }
+    }
+    .custom-batch {
+      flex-direction: column;
+      gap: 6px;
+      img {
+        width: 32px;
+      }
+      .custom-batch-btn {
+        font-size: 12px;
+        padding: 8px 12px;
+      }
+    }
+    .training-options {
+      flex-direction: column;
+      gap: 8px;
+      .training-box {
+        min-width: 160px;
+        padding: 12px;
+        h3 {
+          font-size: 14px;
+        }
+        ul li {
+          font-size: 13px;
+        }
+        .enquire-btn {
+          font-size: 12px;
+          padding: 6px 10px;
+        }
+      }
+    }
+  }
+}

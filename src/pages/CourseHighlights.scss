@@ -1,0 +1,88 @@
+.course-highlights-section {
+  background: #fdfbfa;
+  padding: 35px 20px;
+  max-width: 900px;
+  margin: auto;
+  margin-top: 3rem;
+
+  .container {
+    max-width: 900px;
+    margin: auto;
+    background: linear-gradient(to left, rgba(230, 225, 19, 0.1411764706), rgba(255, 230, 98, 0.8392156863));
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  }
+
+  .title {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #222;
+
+    span {
+      color: #f76b1c;
+    }
+  }
+
+  .highlight-points {
+    list-style: disc;
+    padding-left: 20px;
+    font-size: 18px;
+    color: #333;
+    line-height: 1.7;
+
+    li {
+      margin-bottom: 20px;
+
+      strong {
+        color: #f76b1c;
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .course-highlights-section {
+    padding: 30px 16px;
+
+    .container {
+      padding: 30px;
+    }
+
+    .title {
+      font-size: 24px;
+      margin-bottom: 24px;
+    }
+
+    .highlight-points {
+      font-size: 16px;
+
+      li {
+        margin-bottom: 16px;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .course-highlights-section {
+    padding: 25px 12px;
+
+    .container {
+      padding: 24px;
+    }
+
+    .title {
+      font-size: 20px;
+    }
+
+    .highlight-points {
+      font-size: 15px;
+
+      li {
+        margin-bottom: 14px;
+      }
+    }
+  }
+}

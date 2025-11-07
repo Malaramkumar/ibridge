@@ -1,0 +1,158 @@
+.online-training-wrapper {
+  padding: 2rem;
+  margin-top: 8rem;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f9f9f9;
+  color: #1a1a1a;
+  line-height: 1.7;
+
+  @media (max-width: 768px) {
+    padding: 1rem;
+  }
+}
+
+.online-training-header {
+  text-align: center;
+
+  h1 {
+    font-size: 2.2rem;
+    color: #005baa;
+  }
+
+  .online-training-intro {
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+  }
+}
+
+.online-training-section {
+  margin-top: 2.5rem;
+
+  h2 {
+    font-size: 1.6rem;
+    color: #003f6b;
+    margin-bottom: 0.8rem;
+  }
+
+  ul, ol {
+    padding-left: 1.5rem;
+
+    li {
+      margin-bottom: 0.6rem;
+    }
+  }
+
+  blockquote {
+    border-left: 4px solid #007acc;
+    margin: 1rem 0;
+    padding-left: 1rem;
+    font-style: italic;
+    color: #333;
+    background: #f0f8ff;
+  }
+
+  .online-training-note {
+    background: #fff5cc;
+    padding: 1rem;
+    margin-top: 1rem;
+    border: 1px dashed #ffbf00;
+  }
+
+  a {
+    color: #005baa;
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .online-training-wrapper {
+    padding: 1.5rem;
+    margin-top: 5rem;
+  }
+  .online-training-header h1 {
+    font-size: 1.8rem;
+  }
+  .online-training-header .online-training-intro {
+    font-size: 1rem;
+  }
+  .online-training-section h2 {
+    font-size: 1.3rem;
+  }
+  .online-training-section ul,
+  .online-training-section ol {
+    padding-left: 1rem;
+  }
+  .online-training-section blockquote {
+    padding-left: 0.7rem;
+    font-size: 0.98rem;
+  }
+  .online-training-section .online-training-note {
+    padding: 0.7rem;
+    font-size: 0.98rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .online-training-wrapper {
+    padding: 1rem;
+    margin-top: 3rem;
+  }
+  .online-training-header h1 {
+    font-size: 1.4rem;
+  }
+  .online-training-header .online-training-intro {
+    font-size: 0.95rem;
+  }
+  .online-training-section h2 {
+    font-size: 1.1rem;
+  }
+  .online-training-section ul,
+  .online-training-section ol {
+    padding-left: 0.7rem;
+  }
+  .online-training-section blockquote {
+    padding-left: 0.5rem;
+    font-size: 0.95rem;
+  }
+  .online-training-section .online-training-note {
+    padding: 0.5rem;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .online-training-wrapper {
+    padding: 0.5rem;
+    margin-top: 1.5rem;
+  }
+  .online-training-header h1 {
+    font-size: 1.1rem;
+  }
+  .online-training-header .online-training-intro {
+    font-size: 0.85rem;
+  }
+  .online-training-section h2 {
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+  }
+  .online-training-section ul,
+  .online-training-section ol {
+    padding-left: 0.5rem;
+  }
+  .online-training-section blockquote {
+    padding-left: 0.3rem;
+    font-size: 0.9rem;
+  }
+  .online-training-section .online-training-note {
+    padding: 0.3rem;
+    font-size: 0.9rem;
+  }
+  .online-training-section li {
+    margin-bottom: 0.3rem;
+    font-size: 0.9rem;
+  }
+}

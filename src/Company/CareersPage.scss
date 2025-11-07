@@ -1,0 +1,222 @@
+.about-page {
+  background: #f9f9f9;
+  padding: 40px 20px;
+
+  .about-container {
+    max-width: 1000px;
+    margin: 5rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    padding: 40px;
+
+    h1 {
+      font-size: 2rem;
+      color: #1d3557;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      margin-top: 40px;
+      color: #2a9d8f;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.7;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    strong {
+      color: #1d3557;
+    }
+  }
+
+  // 📱 Tablet
+  @media (max-width: 768px) {
+    .about-container {
+      padding: 30px;
+      margin: 3rem 1rem;
+
+      h1 {
+        font-size: 1.6rem;
+      }
+
+      p {
+        font-size: 15px;
+      }
+    }
+  }
+
+  // 📱 Mobile
+  @media (max-width: 480px) {
+    padding: 20px 10px;
+
+    .about-container {
+      padding: 20px;
+      margin: 2rem 0.5rem;
+
+      h1 {
+        font-size: 1.4rem;
+      }
+
+      h2 {
+        font-size: 1.1rem;
+      }
+
+      p {
+        font-size: 14px;
+        line-height: 1.6;
+      }
+    }
+  }
+}
+
+.careers-page {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: 7rem;
+  font-family: "Segoe UI", sans-serif;
+  color: #2c3e50;
+
+  h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 700;
+    color: #1e272e;
+  }
+
+  .job-card {
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 30px 25px;
+    margin-bottom: 35px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+    transition: box-shadow 0.3s ease;
+
+    &:hover {
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    }
+
+    h2 {
+      font-size: 24px;
+      margin-bottom: 12px;
+      font-weight: 600;
+    }
+
+    .ctc-badge {
+      display: inline-block;
+      background: #e74c3c;
+      color: #fff;
+      padding: 5px 12px;
+      border-radius: 6px;
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+
+    .details,
+    .description {
+      list-style: none;
+      padding: 0;
+      margin-top: 12px;
+
+      li {
+        position: relative;
+        padding-left: 24px;
+        margin-bottom: 8px;
+
+        &::before {
+          content: "✔";
+          position: absolute;
+          left: 0;
+          color: #0984e3;
+          font-weight: bold;
+        }
+      }
+    }
+
+    h4 {
+      margin-top: 24px;
+      font-size: 18px;
+      color: #34495e;
+      font-weight: 600;
+    }
+
+    .call-button {
+      display: inline-block;
+      margin-top: 20px;
+      background: #007bff;
+      color: #fff;
+      padding: 10px 18px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 15px;
+      transition: background 0.3s ease;
+
+      &:hover {
+        background: #0056b3;
+      }
+    }
+  }
+
+  // 📱 Tablet
+  @media (max-width: 768px) {
+    margin: 4rem 1rem;
+    padding: 30px 15px;
+
+    h1 {
+      font-size: 30px;
+    }
+
+    .job-card {
+      padding: 24px 18px;
+
+      h2 {
+        font-size: 20px;
+      }
+
+      .ctc-badge {
+        font-size: 13px;
+        padding: 5px 10px;
+      }
+
+      .call-button {
+        font-size: 14px;
+        padding: 9px 14px;
+      }
+    }
+  }
+
+  // 📱 Mobile
+  @media (max-width: 480px) {
+    margin: 2rem 0.5rem;
+    padding: 20px 10px;
+
+    h1 {
+      font-size: 26px;
+    }
+
+    .job-card {
+      padding: 18px 12px;
+
+      h2 {
+        font-size: 18px;
+      }
+
+      .ctc-badge {
+        font-size: 12px;
+        padding: 4px 8px;
+      }
+
+      .call-button {
+        font-size: 13px;
+        padding: 8px 12px;
+      }
+    }
+  }
+}

@@ -1,0 +1,278 @@
+.fullstack {
+  .fullstack-hero {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 140px 200px;
+    flex-wrap: wrap;
+
+    background: radial-gradient(100% 150% at center top, #ffffff 40%, #ffdfae 62%, transparent 50%);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .fullstack-hero-content-left {
+      flex: 1;
+      max-width: 47%;
+
+      h2 {
+        font-size: 18px;
+        color: #525252;
+        margin-bottom: 8px;
+      }
+
+      h1 {
+        font-size: 42px;
+        font-weight: 800;
+        margin-bottom: 20px;
+        color: #222;
+      }
+
+      p {
+        font-size: 18px;
+        color: #000;
+        line-height: 1.6;
+      }
+
+      .fullstack-dream-job-text {
+        font-size: 22px;
+        color: #2c7a7b;
+        font-weight: 700;
+        margin-top: 24px;
+      }
+
+      .fullstack-star-rating-box {
+        margin-top: 16px;
+        background: #fff6e5;
+        border: 1px solid #ffd700;
+        border-radius: 8px;
+        padding: 12px 16px;
+        display: inline-block;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+
+        .fullstack-stars {
+          font-size: 20px;
+          color: #f6b500;
+          letter-spacing: 2px;
+          margin-bottom: 4px;
+        }
+
+        .fullstack-rating-label {
+          font-size: 14px;
+          color: #444;
+          font-weight: 500;
+        }
+      }
+    }
+
+    .fullstack-hero-box {
+      text-align: center;
+      padding: 40px 20px;
+      border-radius: 20px;
+      background: #fef9f5;
+
+      .fullstack-logo {
+        width: 240px;
+        margin-bottom: 12px;
+      }
+
+      .fullstack-cert-text {
+        font-size: 20px;
+        font-weight: 600;
+        color: #1e3a8a;
+      }
+
+      .fullstack-call-text {
+        margin: 10px 0;
+        color: #374151;
+      }
+
+      .fullstack-enquiry-btn {
+        background: #f97316;
+        color: #fff;
+        padding: 10px 20px;
+        font-weight: 600;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: all 0.3s;
+
+        &:hover {
+          background: #ea580c;
+        }
+      }
+    }
+  }
+}
+  .fullstack-interactive-topics {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 40px 250px;
+  background-color: #f9fbfd;
+  gap: 50px;
+  
+  .fullstack-left-content {
+    flex: 1;
+
+    h2 {
+      font-size: 2rem;
+      color: #1e293b;
+      margin-bottom: 30px;
+    }
+
+    .fullstack-topics-list {
+      .fullstack-topic {
+        margin-bottom: 24px;
+        cursor: pointer;
+
+        h3 {
+          font-size: 1.2rem;
+          color: #0f172a;
+          transition: color 0.3s;
+        }
+
+        &:hover h3 {
+          color: #f97316;
+        }
+
+        &.active h3 {
+          color: #f97316;
+        }
+
+        .fullstack-description {
+          font-size: 1rem;
+          color: #475569;
+          margin-top: 10px;
+          transition: all 0.3s ease-in-out;
+        }
+      }
+    }
+  }
+
+  .fullstack-right-image {
+    flex: 1;
+    text-align: center;
+    border-radius: 40px;
+
+    img {
+      max-width: 50%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    padding: 20px;
+
+    .fullstack-right-image {
+      margin-top: 30px;
+
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+ 
+ .fullstack-right-image {
+    position: relative;
+    flex: 1;
+    text-align: center;
+    max-width: 500px;
+    height: 500px;
+    margin: auto;
+    background: url('../assets/fullstack/fullstack-BG.jpg') no-repeat center center;
+    background-size: contain;
+
+    img {
+      width: 100%;
+      height: auto;
+      //position: relative;
+      z-index: 2;
+      margin-top: 35%;
+      position: absolute;
+      border-radius: 8px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    }
+  }
+@media (max-width: 1200px) {
+  .fullstack {
+    .fullstack-hero {
+      padding: 10px 25px;
+      gap: 30px;
+
+      .fullstack-hero-content-left {
+        max-width: 100%;
+
+        h1 {
+          font-size: 36px;
+        }
+
+        p {
+          font-size: 16px;
+        }
+
+        .fullstack-dream-job-text {
+          font-size: 20px;
+        }
+      }
+
+      .fullstack-hero-box {
+        padding: 30px 16px;
+
+        .fullstack-logo {
+          width: 200px;
+        }
+
+        .fullstack-cert-text {
+          font-size: 18px;
+        }
+      }
+    }
+
+    .fullstack-interactive-topics {
+      padding: 40px 100px;
+      gap: 30px;
+    }
+
+    .fullstack-right-image {
+      max-width: 400px;
+      height: 400px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .fullstack-right-image {
+    max-width: 100%;
+    height: auto;
+    background-size: cover;
+    display: flex; /* Centering fix */
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+    img {
+      position: relative !important; /* Override absolute */
+      margin-top: 0 !important;      /* Remove offset */
+      max-width: 90%;
+      height: auto;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .fullstack-right-image {
+    padding: 16px;
+    min-height: 250px; /* ensure visible space */
+    
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}

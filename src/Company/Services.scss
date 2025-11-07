@@ -1,0 +1,203 @@
+.services {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  font-family: 'Segoe UI', sans-serif;
+
+  .container {
+    max-width: 1200px;
+    margin: 5rem;
+  }
+
+  .intro {
+    font-size: 18px;
+    margin-bottom: 30px;
+    line-height: 1.6;
+  }
+
+  .contact {
+    font-size: 16px;
+    margin-bottom: 40px;
+    a {
+      color: #007bff;
+      text-decoration: none;
+    }
+  }
+
+  .service-block {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 50px;
+    align-items: center;
+
+    &.reverse {
+      flex-direction: row-reverse;
+    }
+
+    .text {
+      flex: 1;
+      h3 {
+        margin-bottom: 10px;
+        color: #333;
+      }
+      p {
+        font-size: 16px;
+        line-height: 1.6;
+      }
+      ul {
+        padding-left: 20px;
+        li {
+          list-style-type: disc;
+          margin-bottom: 6px;
+        }
+      }
+    }
+
+    .image {
+      flex: 1;
+      img {
+        width: 100%;
+        border-radius: 8px;
+      }
+    }
+  }
+
+  .divider {
+    border-top: 1px dotted #aaa;
+    margin: 40px 0;
+  }
+
+  .erp-columns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 50px;
+
+    > div {
+      flex: 1;
+      min-width: 250px;
+      h3 {
+        margin-bottom: 10px;
+      }
+      ul {
+        padding-left: 20px;
+        li {
+          list-style-type: circle;
+          margin-bottom: 6px;
+        }
+      }
+    }
+  }
+
+  h2, h3, h4 {
+    color: #004aad;
+  }
+
+  p {
+    color: #333;
+  }
+}
+@media (max-width: 1024px) {
+  .services {
+    padding: 40px 15px;
+
+    .container {
+      margin: 3rem auto;
+    }
+
+    .service-block {
+      flex-direction: column;
+
+      &.reverse {
+        flex-direction: column;
+      }
+
+      .text, .image {
+        width: 100%;
+      }
+
+      .image img {
+        max-height: 300px;
+        object-fit: cover;
+      }
+    }
+
+    .erp-columns {
+      gap: 20px;
+
+      > div {
+        flex: 1 1 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .services {
+    padding: 30px 10px;
+
+    .intro {
+      font-size: 16px;
+    }
+
+    .contact {
+      font-size: 14px;
+    }
+
+    .service-block {
+      .text {
+        p {
+          font-size: 15px;
+        }
+
+        ul li {
+          font-size: 14px;
+        }
+      }
+    }
+
+    .erp-columns {
+      flex-direction: column;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .services {
+    padding: 25px 10px;
+
+    .intro {
+      font-size: 15px;
+      text-align: justify;
+    }
+
+    .contact {
+      font-size: 13px;
+    }
+
+    .service-block {
+      gap: 20px;
+
+      .text {
+        h3 {
+          font-size: 1.2rem;
+        }
+
+        p {
+          font-size: 14px;
+        }
+      }
+
+      .image img {
+        border-radius: 6px;
+      }
+    }
+
+    .erp-columns > div h3 {
+      font-size: 1rem;
+    }
+
+    .erp-columns > div ul li {
+      font-size: 13px;
+    }
+  }
+}

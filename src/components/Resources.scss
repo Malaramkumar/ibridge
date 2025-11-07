@@ -1,0 +1,40 @@
+.resources-page {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.resource-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.resource-card {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ccc;
+  transition: transform 0.3s ease;
+}
+
+.resource-card:hover {
+  transform: translateY(-5px);
+}
+
+.resource-card h2 {
+  color: #114488;
+}
+
+.resource-card ul {
+  list-style: square;
+  padding-left: 20px;
+}
+
+.resource-card a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #0066cc;
+  font-weight: bold;
+  text-decoration: none;
+}
